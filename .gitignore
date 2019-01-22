@@ -3,3 +3,8 @@ server-dist/
 logs/
 client-dist/
 
+# production
+/build
+
+.idea/
+.vscode/
