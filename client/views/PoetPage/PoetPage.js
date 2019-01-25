@@ -10,14 +10,13 @@ import PoetPhotoGallary from './components/PoetPhotoGallary/PoetPhotoGallary'
 import PoetVideo from './components/PoetVideo/PoetVideo'
 import PoetMap from './components/PoetMap/PoetMap'
 
+// пока что хардкодь информацию по поэту в этом файле
+// потом когда доделаешь полностью, я прикручу перевод контента
+import contentPoetsRu from '../../content/poets-ru'
+
 class PoetPage extends React.Component {
-  // пока что хардкодь тут информацию по поэту
-  // потом когда доделаешь полностью, я прикручу перевод контента
   state = {
-    poetInfo: {
-      name: 'Имя поэта'
-      // и так далее, это нужно будет согласовывать с тем кто будет контент искать
-    },
+    poetInfo: contentPoetsRu[0]
   }
 
   render() {
