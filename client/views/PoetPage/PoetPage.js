@@ -13,23 +13,41 @@ import PoetMap from './components/PoetMap/PoetMap'
 // пока что хардкодь информацию по поэту в этом файле
 // потом когда доделаешь полностью, я прикручу перевод контента
 import contentPoetsRu from '../../content/poets-ru'
+import contentPoetsBy from '../../content/poets-by'
+import contentPoetsEn from '../../content/poets-en'
 
 class PoetPage extends React.Component {
   state = {
-    poetInfo: contentPoetsRu[0]
+    poetInfo: contentPoetsRu[0],
+    choosedPoetId: 0
   }
 
   render() {
     // Благодаря функции connect у вас в this.props появится
     // свойство lang: currentLang ('ru' or 'by' or 'en')
+    const { lang } = this.props
+    const { choosedPoetId } = this.state
+    let choosedPoetContent
+
+    if (lang === 'ru') {
+      choosedPoetContent = contentPoetsRu[choosedPoetId]
+    } else if (lang === 'en') {
+      choosedPoetContent = contentPoetsEn[choosedPoetId]
+    } else {
+      choosedPoetContent = contentPoetsBy[choosedPoetId]
+    }
+
     return (
       <div className="poet-page">
-        <PoetPhoto lang={this.props.lang}/>
-        <PoetBiography lang={this.props.lang} />
-        <PoetWorksList lang={this.props.lang} />
-        <PoetPhotoGallary lang={this.props.lang} />
-        <PoetVideo lang={this.props.lang} />
-        <PoetMap lang={this.props.lang} />
+        <PoetPhoto
+          imgName={choosedPoetContent.avatarName}
+          lang={lang}
+        />
+        <PoetWorksList lang={lang} />
+        <PoetBiography lang={lang} />
+        <PoetPhotoGallary lang={lang} />
+        <PoetVideo lang={lang} />
+        <PoetMap lang={lang} />
       </div>
     )
   }

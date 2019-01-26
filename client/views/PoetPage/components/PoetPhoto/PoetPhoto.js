@@ -6,10 +6,10 @@ class PoetPhoto extends React.Component {
   state = {
     content: {
       'ru': {
-        title: 'Привет из фото поэта'
+        title: 'Привет из фото поэта',
       },
       'en': {
-        title: 'Hello from poet photo'
+        title: 'Hello from poet photo',
       },
       // 'by': {
       //   title: '...'
@@ -17,36 +17,19 @@ class PoetPhoto extends React.Component {
     },
 
     // по дефолту язык будет русским
-    currentContent: {
-      title: 'Привет из фото поэта'
-    }
-  }
-
-  componentDidMount() {
-    // из компонента родителя мы получаем this.props.lang = currentLang
-    // свойство lang: currentLang ('ru' or 'by' or 'en')
-    // устанавливаем контент в зависимости от языка
-    this.setState((state, props) => {
-      return {
-        currentContent: state.content[props.lang]
-      }
-    })
-  }
-
-  componentWillReceiveProps(newProps) {
-    // в данном случае у нас может обновиться язык, поэтому мы обновляем 
-    // контент в зависимости от нового языка 
-    this.setState((state) => {
-      return {
-        currentContent: state.content[newProps.lang]
-      }
-    })
+    currentContent: null
   }
 
   render() {
+    const { content } = this.state
+    const { lang, imgName } = this.props
+    const currentContent = content[lang]
+    const img = require(`../../../../assets/img/${imgName}`)
+
     return (
       <div className="poet-photo">
-        <h1>{this.state.currentContent.title}</h1>
+        <h1>{currentContent.title}</h1>
+        <img src={img} />
       </div>
     )
   }
