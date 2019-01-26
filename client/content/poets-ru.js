@@ -2,13 +2,14 @@ export default [
   {
     id: 0,
     name: 'Имя поэта',
-    avatarName: 'poet-1.png',
+    avatarName: 'poet-1.jpg',
     biographyContent: [
       {
-        period: '11/2010 - 12/2016',
+        born: 'Minsk, Belarus',
+        period: '1920 - 2000',
         text: 'Написал то-то то-то',
+        genre: 'тематика сочинений: лирическое стихотворение, ода, комедия, трагедия, драма и т.д.'
       }
     ]
-    // и так далее
   }
 ]

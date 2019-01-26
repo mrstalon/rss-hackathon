@@ -42,14 +42,18 @@ class PoetPage extends React.Component {
         <PoetPhoto
           imgName={choosedPoetContent.avatarName}
           lang={lang}
-        />
-        <PoetWorksList lang={lang} />
-        <PoetBiography lang={lang} />
-        <PoetPhotoGallary lang={lang} />
-        <PoetVideo lang={lang} />
-        <PoetMap lang={lang} />
-      </div>
-    )
+          name={choosedPoetContent.name}
+          born={choosedPoetContent.biographyContent[0].born}
+          period={choosedPoetContent.biographyContent[0].period}
+          genre={choosedPoetContent.biographyContent[0].genre}
+      />
+    <PoetWorksList lang={lang}/>
+    <PoetBiography lang={lang}/>
+    <PoetPhotoGallary lang={lang}/>
+    <PoetVideo lang={lang}/>
+    <PoetMap lang={lang}/>
+  </div>
+  )
   }
 }
 
