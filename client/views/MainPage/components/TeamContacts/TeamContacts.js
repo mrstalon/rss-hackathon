@@ -12,9 +12,9 @@ class TeamContacts extends React.Component {
       'en': {
         title: 'Hello from team contacts'
       },
-      // 'by': {
-      //   title: '...'
-      // }
+      'by': {
+        title: '...'
+      }
     },
 
     // по дефолту язык будет русским

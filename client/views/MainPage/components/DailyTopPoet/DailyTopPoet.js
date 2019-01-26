@@ -12,9 +12,9 @@ class DailyTopPoet extends React.Component {
       'en': {
         title: 'Hello from daily top poet'
       },
-      // 'by': {
-      //   title: '...'
-      // }
+      'by': {
+        title: '...'
+      }
     },
 
     // по дефолту язык будет русским
