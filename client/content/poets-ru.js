@@ -1,15 +1,142 @@
 export default [
-  {
-    id: 0,
-    name: 'Имя поэта',
-    avatarName: 'poet-1.jpg',
+  /*{
+    id: 100,
+    name: '',
+    avatarName: 'poets_.jpg',
     biographyContent: [
       {
-        born: 'Minsk, Belarus',
-        period: '1920 - 2000',
-        genre: 'Тематика сочинений: лирическое стихотворение, ода, комедия, трагедия, драма и т.д.',
-        description:
-          'Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate quatsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate quatsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate quatsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate quatsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate quatsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem Poet and novelist Simon Armitage was born in 1963 in Huddersfield, England.After studying Geography at Portsmouth Polytechnic, he worked with young offenders before gaining a postgraduate qualification in social work at Manchester University. He worked as a probation officer in Oldham until 1994His poetry books include Zoom! (1989), Kid (1992), and CloudCuckooLand (1997), which contains the poem '
+        born: {
+          city: '',
+          country: ''
+        },
+        period: '',
+        genre: '',
+        description: "",
+        composition: [
+          { id: 1, name: '', year: '19' },
+          { id: 2, name: '', year: '19' },
+          { id: 3, name: '', year: '19' },
+          { id: 4, name: '', year: '19' },
+          { id: 5, name: '', year: '19' }
+        ],
+        video: ''
+      }
+    ]
+  },*/
+  {
+    id: 0,
+    name: 'Пётр Устинович Бровка',
+    avatarName: 'poets_PyotrUstinovichBrovka.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Путилковичи',
+          country: 'Росийская империя'
+        },
+        period: '1905 - 1980',
+        genre: 'лирика, роман',
+        description: 'Литературной деятельностью занимался с 1926 года. Дебютировал в газете «Чырвоная Полаччына» и в литературном альманахе «Наддзвінне». \nОпубликовал ряд книг стихов и поэм: «К родным берегам», «Избранные стихи и поэмы» (1934), «Приход героя» (1935), «Весна родины» (1937), «Путями боровыми» (1940). Подвиг народа, его мужество и стойкость Бровка отразил в лиро-эпических поэмах «Беларусь» (1943), «Поэма про Смолячкова» (1942), стихах «Будем сеять, белорусы!», «Кастусь Калиновский», «Надя-Надейка», «Могила бойца». Поэмы «Ясный Кут», «Полонянка» (1945), «Хлеб» (1946), стихи «Парк Победы», «Смерть героя», «Кузнец» отмечены тонким лиризмом, ярким национальным колоритом. \nВ 1957 году написал роман «Когда сливаются реки», посвящённый строительству ГЭС на границе трёх республик, дружбе белорусов, литовцев и латышей. \nПереводил на белорусский язык произведения Т. Шевченко, В. Маяковского, П. Тычины, М. Бажана, А. Твардовского, М. Исаковского, А. Прокофьева, В. Броневского, Дж. Байрона.',
+        composition: [
+          { id: 1, name: 'Годы как шторм', year: '1930' },
+          { id: 2, name: 'А дни идут...', year: '1961' },
+          { id: 3, name: 'Ты — моя пчёлка', year: '1972' },
+          { id: 4, name: 'Когда сливаются реки', year: '1957' },
+          { id: 5, name: 'Молодым друзьям', year: '1961' }
+        ],
+        video: 'https://www.youtube.com/watch?v=y7q6WXFqP2I'
+      }
+    ]
+  },
+  {
+    id: 1,
+    name: 'Анатолий Устинович Вольный',
+    avatarName: 'poets_AnatolVolny.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Пуховичи',
+          country: 'Росийская империя'
+        },
+        period: '1902-1937',
+        genre: 'драма',
+        description: "Родился 19 ноября 1902 года на станции Пуховичи. Учился в Игуменской гимназии. В 1919 году в связи с началом Гражданской войны в РСФСР, ушёл добровольцем в Красную Армию, где боролся против иностранных интервентов. В 1921 году был демобилизован и поступил в Минский педагогический институт. В 1922 году начал литературную деятельность, а в 1929 году начал писать сценарии для кинематографа. В 1936 году был обвинён в антисоветской деятельности и был репрессирован, арестован 4 ноября 1936 года и был приговорён к расстрелу. Приговор был приведён в исполнение 29 октября 1937 года в Минске. Реабилитирован 3 декабря 1957 года.",
+        composition: [
+          { id: 1, name: 'Сборник фельетонов', year: '1927' },
+          { id: 2, name: 'Тебе: стихи', year: '1927' },
+          { id: 3, name: 'Соседи: Гуморески и фельетоны', year: '1932' }
+        ],
+        video: 'https://www.youtube.com/watch?v=V5qnr3_cTf8'
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Алесь Гарун',
+    avatarName: 'poets_AlesHarun.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Минск',
+          country: 'Российская империя'
+        },
+        period: '1887-1920',
+        genre: 'проза, драма',
+        description: "Але́сь Гару́н (псевдоним, настоящее имя — Алекса́ндр Влади́мирович Пруши́нский; 11 марта (27 февраля) 1887 — 20 июля 1920) — белорусский поэт, писатель, публицист, деятель «Белорусского возрождения» начала XX века.\nРодился в рабочей семье, в молодости принимал участие в революционном движении, 9 лет провёл в ссылке в Иркутской губернии, что отразилось в его творчестве.\nВ 1917 году выпустил сборник стихотворений «Матчын дар», в основу которых положены народные поверья, сказки и легенды.\nГарун — поэт нашенивского периода. Он отводил значительное место мотивам белорусского возрождения. Мысль о национальном возрождении связана у Гаруна с идеей социального переустройства общества. Из современной ему действительности он брал образы крайней нищеты, покинутости.\nГарун известен, кроме того, как автор пьес для детского театра, в которых, по мнению критики, проявил исключительно тонкое понимание детской души. Выпущенной в 1920 книжкой «Жывыя казкі для дзіцячага тэатру» Гарун был одним из первых авторов детской художественной литературы в Белоруссии.\nПроза Алеся Гаруна преимущественно выходила под псевдонимом І. Жывіца.\nАлесь Гарун умер 20 июля 1920 года и был похоронен на Раковицком кладбище в Кракове, Польша.",
+        composition: [
+          { id: 1, name: 'Мои коляды', year: '1920' },
+          { id: 2, name: 'Мать-Беларусь', year: '1907' },
+          { id: 3, name: 'Ночные мысли', year: '1908' },
+          { id: 4, name: 'Мамин подарок и другие произведения', year: '1962' }
+        ],
+        video: 'https://www.youtube.com/watch?v=6bOw-U-ezuw'
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Адам Глобус',
+    avatarName: 'poets_AdamHlobus.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Дзержинск',
+          country: 'БССР'
+        },
+        period: '1958-...',
+        genre: 'рассказ, эссе',
+        description: "Родился в г. Дзержинске Минской области в семье белорусского писателя Вячеслава Адамчика (белор. Вячаслаў Адамчык). С 1959 года живёт в Минске. Окончил педагогическое отделение Минского художественного училища им. А. К. Глебова (1977), художественное отделение Белорусского театрально-художественного института (1983). Работал чертёжником, художником-реставратором, художником-оформителем, редактором журнала «Родник» (с 1987 года). Занимается издательской деятельностью (в издательстве «Сучасны літаратар»).\nЖена — Елена Адамчик, известный белорусский фотограф. Имеет двух детей и внука.\nЯвлялся одним из основателей и участником неформального объединения молодых литераторов «Тутэйшыя» («Здешние», 1986—1990), которое в силу обстоятельств занималась не только литературой, но также выражало и активную социальную и политическую позицию. В частности, в октябре 1988 года объединение организовало, ставшую впоследствии традиционной, первую в Белоруссии акцию поминовения жертв советского режима под названием «Дзяды», с многотысячным шествием и митингом. Член Союза писателей СССР (1988), Союза белорусских писателей (с 1989 года).",
+        composition: [
+          { id: 1, name: 'Парк', year: '1988' },
+          { id: 2, name: 'Смерть — мужчина', year: '1992' },
+          { id: 3, name: 'Перекрёсток', year: '1993' },
+          { id: 4, name: 'Тетради', year: '2003' },
+          { id: 5, name: 'Современники', year: '2006' }
+        ],
+        video: 'https://www.youtube.com/watch?v=-L3wz8QQbAs'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: 'Ни́л Семёнович Гиле́вич',
+    avatarName: 'poets_NilHilevich.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Слобода',
+          country: 'БССР'
+        },
+        period: '1931-2016',
+        genre: 'поэзия',
+        description: "Родился 30 сентября 1931 года в д. Слобода Логойского района Минской области в крестьянской семье. Настоящее имя — Нинел, впоследствии сменил имя на Нил. Брат — белорусский писатель М. Гиль.\nВ середине 1940-х некоторое время работал сельским почтальоном. Окончил Минское педагогическое училище имени Н. К. Крупской (1951), филологический факультет Белорусского государственного университета (1956) и аспирантуру при нём. В 1951 году работал учителем в одной из школ Минска, в 1960—1986 годы — на кафедре белорусской литературы БГУ.\nС 1958 по 1963 годы работал также литературным консультантом газеты «Звязда». В 1980—1989 годы — первый секретарь правления Союза писателей Белорусской ССР. С 1989 года — председатель ТБМ им. Франциска Скорины, главный редактор бюллетеня данной организации «Наша слова». Депутат Верховного Совета XI и XII созывов (1985—1995), председатель Комитета по образованию, культуре и сохранению исторического наследия в 1990—1995, член Президиума Верховного Совета Белорусской ССР.\n29 марта 2016 года скончался в Минске от онкологического заболевания. На тот момент ему было 84 года. Похоронен 1 апреля 2016 года на Кальварийском кладбище рядом с могилой супруги.",
+        composition: [
+          { id: 1, name: '', year: '19' },
+          { id: 2, name: '', year: '19' },
+          { id: 3, name: '', year: '19' },
+          { id: 4, name: '', year: '19' },
+          { id: 5, name: '', year: '19' }
+        ],
+        video: ''
       }
     ],
     composition: [
@@ -25,5 +152,5 @@ export default [
       { id: 10, name: 'composition_10', year: '1959' },
       { id: 11, name: 'composition_11', year: '1960' }
     ]
-  }
+  },
 ]
