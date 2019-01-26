@@ -1,6 +1,10 @@
-.poet-photo-gallary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
+.poet__gallery--container {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.poet__gallery--title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }

@@ -24,6 +24,8 @@ export default [
       { id: 9, name: 'composition_9', year: '1958' },
       { id: 10, name: 'composition_10', year: '1959' },
       { id: 11, name: 'composition_11', year: '1960' }
-    ]
+    ],
+    videoLink: 'GgB-s8_8TcM',
+    gallery: ['header-bg-0.jpg', 'header-bg-1.jpg', 'header-bg-2.jpg', 'poet-1.jpg']
   }
 ]
