@@ -31,9 +31,16 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .poet__photo--img {
     width: 200px;
+    height: 290px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .poet__photo--img {
+    width: 100px;
     height: 190px;
   }
 }
