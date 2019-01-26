@@ -1,5 +1,5 @@
 import React from 'react'
-import WorksTable from './WorksTable/WorksTable'
+import WorksTable from './components/WorksTable/WorksTable'
 import './poet-works-list.scss'
 
 class PoetWorksList extends React.Component {
