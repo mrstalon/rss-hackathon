@@ -5,12 +5,12 @@ import './poet-biography.scss'
 class PoetBiography extends React.Component {
   state = {
     content: {
-      'ru': {
+      ru: {
         title: 'Привет из биографии поэта'
       },
-      'en': {
+      en: {
         title: 'Hello from poet biography'
-      },
+      }
       // 'by': {
       //   title: '...'
       // }
@@ -22,12 +22,13 @@ class PoetBiography extends React.Component {
 
   render() {
     const { content } = this.state
-    const { lang } = this.props
+    const { lang, description } = this.props
     const currentContent = content[lang]
 
     return (
-      <div className="poet-biography">
-        <h1>{currentContent.title}</h1>
+      <div className="poet__biography--container">
+        <h2 className="poet__biography--title">Биография</h2>
+        <div className="poet__biography-main">{description}</div>
       </div>
     )
   }
