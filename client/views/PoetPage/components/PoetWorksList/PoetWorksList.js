@@ -26,8 +26,8 @@ class PoetWorksList extends React.Component {
     const currentContent = content[lang]
     const compositions = composition.map((el) => {
       return (
-        <tr>
-          <td>{el.year}</td>
+        <tr key={el.id}>
+          <td className="poet__worklist--year">{el.year}</td>
           <td>{el.name}</td>
         </tr>
       )
