@@ -106,14 +106,38 @@ export default [
         genre: 'poetry',
         description: "Nil Hilevich was born in the village of Slabada , in the Lahoisk District of Mensk Province. He studied in a college in Mensk (from which he graduated in 1951), preparing to be a teacher. During the last year in college he worked as a teacher in one of the schools in Mensk. He continued his education at the Belarusian State University (the Faculty of Philology), and graduated in 1956. During 1960-1986 he was working at the university, and later on became a professor. In 1958 he started to work for a newspaper Zvyazda. In 1978 Hilevich joined the Communist Party. In 1980 he became the executive secretary of the Writer's Union of BSSR, and held that position for 9 years. In 1989 he became a chairperson of the Frantsishak Skaryna Belarusian Language Society. He also was the chief editor of the Society's bulletin Our Word. In 1991 Nil Hilevich received a People's Poet of Belarus nomination. He has also received some other awards in literature.",
         composition: [
-          { id: 1, name: '', year: '19' },
-          { id: 2, name: '', year: '19' },
-          { id: 3, name: '', year: '19' },
-          { id: 4, name: '', year: '19' },
-          { id: 5, name: '', year: '19' }
+          { id: 1, name: 'The Jack of Diamonds', year: '1961' },
+          { id: 2, name: 'To New Wreaths', year: '1963' },
+          { id: 3, name: 'A Sin or Two', year: '1970' },
+          { id: 4, name: 'How I Learnt to Live', year: '1974' },
+          { id: 5, name: 'Mermaid in the Narach', year: '1974' }
         ],
-        video: ''
+        video: 'https://www.youtube.com/watch?v=sWPk3sk6m6k'
       }
     ]
   },
+  {
+    id: 5,
+    name: 'Larysa Hienijus',
+    avatarName: 'poets_LarysaHienijus.jpg',
+    biographyContent: [
+      {
+        born: {
+          city: 'Zlobaucy',
+          country: 'Russian empire'
+        },
+        period: '1910-1983',
+        genre: 'poetry',
+        description: "She was born Larysa Miklasevic in the estate Zlobaucy (now Vaukavysk raion, Grodno Region) into the family of a wealthy land-owner. She had many siblings. Hienijus went to a Polish school, in 1928 she successfully completed Vaukavysk Polish Gymnasium. At that time, she got acquainted with the world literature - the Polish, Scandinavian and English classics. She also started writing poetry.\nOn 3 February she married a medical student, Janka Hienijus, who at that time was studying at Charles University, Prague. In 1937, after the birth of their son Jurka, she joined her husband in Prague. There, one of Hienijuss' neighbors was Alexandra Kosach-Shimanovskaya, sister of Lesya Ukrainka - the author whose work has greatly influenced the Belarusian poet. Hienijus's first published poems appeared in \"Раніца\", a Berlin newspaper of Belarusian emigrants in 1939. In 1942, her first collection of poetry, «Ад родных ніў» was published. It was filled with nostalgia and thoughts about the fate of her homeland.\nWhen in 1939 the Red Army took over western Belarus, the poet's father, Anton Miklasevic, was shot dead and his mother and two sisters were deported to Kazakhstan. According to the will of the then President of the Belarusian People's Republic (BNR) Vasil Zacharka, Larysa Hienijus was appointed Secretary General of the Government of BNR in exile in March 1943. She preserved and organised the BNR archive, took care of Belarusian immigrants, political refugees and prisoners of war. She hid the most valuable part of the archive in the location out of the reach of the NKVD and the MGB. Later, the Soviet security service tortured the poet to get hold of the archive.\nAfter the Second World War, Larysa Hienijuš with her husband and son lived in Vimperk near Prague. 5 March 1948, they were arrested by the MGB. Both Larysa and Janka Hienijuš were kept in the prisons in Czechoslovakia and Lviv, Ukraine. In October 1948 they were transferred to a prison in Minsk. Here Larysa Hienijuš was interrogated and tortured by the BSSR Minister of State Security Lavrentii Tsanava.\nOn 7 February 1949, both Hienijušes were sentenced to 25 years of imprisonment. The poet served her term in the camps of the Komi ASSR. She showed an example of a phenomenal spiritual strength by bringing together Belarusians and prisoners of other nationalities, and continued writing poetry. Prisoners called her Mother and her poems - glucose, memorising them by heart and reading as a prayer. After eight years, Larysa Hienijuš was released in 1956.\nThe tragic fate befell other members of Miklaševič family: the poet's mother and two sisters died in Kazakhstan in 1945; her brother, Arkadź, soldier in the Anders' Army, died on 27 July 1944 in the Battle of Monte Cassino in Italy, and another brother, Raścislaǔ, soldier in the Polish Army, died on 26 (28?) April 1945 near Berlin.\nAfter her release, the poet settled in her husband's home in Zelva. Both Hienijušes refused to accept the Soviet citizenship and the rest of their lives lived with a note "Stateless" in their passports. On several occasions they requested rehabilitation, but every time received a reply: “Sentenced lawfully”. KGB followed the poet everywhere, read the letters sent to her from all around the world, installed spying devices in her house. Janka Hienijuš was allowed to work as a doctor in the local clinic, and her wife - not for long - as a cleaner. In 1979, Janka died and the poet was allocated a meager pension. The authorities denied the poet a quiet old age; only once she was allowed to visit her son Jurka, who lived in Białystok, Poland.\nFor nearly ten years, the poet's works were totally banned. Only in 1963, her post-improsonment poems were published in Belarusian magazines for the first time. Thanks to the then Chairman of the Supreme Soviet of the BSSR, Maksim Tank, Larysa Hienijuš's first in Belarus collection of works, «Невадам зь Нёмана» was published in 1967. It was edited by Uladzimir Karatkievič pro bono. It included most of the poems from «Ад родных ніў» without some excerpts removed by censors, as well as new poems of the Zelva period. Then, for years she was allowed to publish only children’s poetry.\nLarysa Hienijuš died in 1983. Thousands of people came to her burial.\nIn 1999, the Belarusian Helsinki Committee appealed to the General Prosecutor's Office to annul an unjust sentence against both Hienijušs. The Office forwarded the appeal to the Supreme Court which refused the annulment as the poet \"has no grounds for rehabilitation.\" However, the reasons for refusal were unknown as, according to the Court's letter, \"they may only be given to the repressed person\".",
+        composition: [
+          { id: 1, name: 'From native cornfields', year: '1942' },
+          { id: 2, name: 'Tales for Mikhail', year: '1972' },
+          { id: 3, name: 'Good morning', year: '1976' },
+          { id: 4, name: 'Mother & son', year: '1992' },
+          { id: 5, name: 'Choice', year: '1997' }
+        ],
+        video: 'https://www.youtube.com/watch?v=nw4eWICjiyw'
+      }
+    ]
+  }
 ]
