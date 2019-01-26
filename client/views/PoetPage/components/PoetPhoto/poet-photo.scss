@@ -1,10 +1,15 @@
 .poet__photo--container {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .poet__photo--img {
   width: 300px;
   height: 390px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.75);
 }
 
 .poet__photo--name {
@@ -13,8 +18,29 @@
 
 .poet__photo--info {
   margin: 0 0 0 50px;
+  width: 50%;
 }
 
 .poet__photo--info > * {
   margin-bottom: 40px;
+}
+
+.poet__photo--info strong {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .poet__photo--img {
+    width: 200px;
+    height: 290px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .poet__photo--img {
+    width: 100px;
+    height: 190px;
+  }
 }

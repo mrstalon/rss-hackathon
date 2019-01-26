@@ -138,6 +138,19 @@ export default [
         ],
         video: ''
       }
+    ],
+    composition: [
+      { id: 1, name: 'composition_1', year: '1950' },
+      { id: 2, name: 'composition_2', year: '1951' },
+      { id: 3, name: 'composition_3', year: '1952' },
+      { id: 4, name: 'composition_4', year: '1953' },
+      { id: 5, name: 'composition_5', year: '1954' },
+      { id: 6, name: 'composition_6', year: '1955' },
+      { id: 7, name: 'composition_7', year: '1956' },
+      { id: 8, name: 'composition_8', year: '1957' },
+      { id: 9, name: 'composition_9', year: '1958' },
+      { id: 10, name: 'composition_10', year: '1959' },
+      { id: 11, name: 'composition_11', year: '1960' }
     ]
   },
 ]
