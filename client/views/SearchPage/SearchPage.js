@@ -18,36 +18,17 @@ class SearchPage extends React.Component {
     },
 
     // по дефолту язык будет русским
-    currentContent: {
-      title: 'Привет из страницы поиска'
-    }
-  }
-
-  componentDidMount() {
-    // Благодаря функции connect у вас в this.props появится
-    // свойство lang: currentLang ('ru' or 'by' or 'en')
-    this.setState((state, props) => {
-      return {
-        currentContent: state.content[props.lang]
-      }
-    })
-  }
-
-  componentWillReceiveProps(newProps) {
-    // componentWillReceiveProps вызовется когда данному компоненту будут переданы новые props
-    // в данном случае у нас может меняться язык, поэтому мы обновляем 
-    // язык контента в state нашего компонента при изменении языка в this.props.lang
-    this.setState((state) => {
-      return {
-        currentContent: state.content[newProps.lang]
-      }
-    })
+    currentContent: null
   }
 
   render() {
+    const { content } = this.state
+    const { lang } = this.props
+    const currentContent = content[lang]
+
     return (
       <div className="search-page">
-        <h1>{this.state.currentContent.title}</h1>
+        <h1>{currentContent.title}</h1>
       </div>
     )
   }
