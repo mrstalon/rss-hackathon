@@ -1,5 +1,5 @@
 import React from 'react'
-
+import WorksTable from './WorksTable/WorksTable'
 import './poet-works-list.scss'
 
 class PoetWorksList extends React.Component {
@@ -24,22 +24,12 @@ class PoetWorksList extends React.Component {
     const { content } = this.state
     const { lang, composition } = this.props
     const currentContent = content[lang]
-    const compositions = composition.map((el) => {
-      return (
-        <tr key={el.id}>
-          <td className="poet__worklist--year">{el.year}</td>
-          <td>{el.name}</td>
-        </tr>
-      )
-    })
 
     return (
       <div className="poet__worklist--container">
         <h2 className="poet__worklist--title">Библиография</h2>
         <div className="poet__worklist-main">
-          <table className="poet__worklist-content">
-            <tbody>{compositions}</tbody>
-          </table>
+          <WorksTable composition={composition} />
         </div>
       </div>
     )
