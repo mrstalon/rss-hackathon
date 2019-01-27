@@ -1,0 +1,112 @@
+.poets-list {
+  margin-top: 50px;
+  width: 720px;
+  height: 600px;
+  overflow: scroll;
+
+  .poets-list__item {
+    margin: 0 auto;
+    width: 95%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+
+    img {
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 200px;
+      height: 100%;
+    }
+
+    div {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .poet-list__item__name {
+        font-size: 1.2vw;
+        color: white;
+      }
+
+      .poet-list__item__city {
+        color: #3fae49;
+        font-size: 2vw;
+      }
+    }
+  }
+
+  .poets-list__item:hover {
+    background-color: rgb(116, 116, 116);
+  }
+}
+
+@media (max-width: 1250px) {
+  .poet-list__item__name {
+    font-size: 2vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .poet-list__item__name {
+    font-size: 3vw !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .poets-list {
+    width: 500px;
+
+    .poet-list__item__name {
+      font-size: 2.5vw !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .poet-list__item__name {
+    font-size: 3vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .poets-list {
+    width: 400px;
+  }
+  .poets-list__item {
+    height: 150px !important;
+
+    img {
+      border-radius: 50% !important;
+      width: 100px !important;
+      height: 100px !important;
+      margin-left: 10px;
+    }
+
+    .poet-list__item__name {
+      font-size: 3vw !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .poets-list {
+    width: 100%;
+
+    .poets-list__item {
+      .poet-list__item__name {
+        font-size: 3.5vw !important;
+      }
+
+      .poet-list__item__city {
+        font-size: 4vw !important;
+      }
+    }
+  }
+}
