@@ -16,7 +16,7 @@ export default (userInp, city, originalPoets) => {
     newPoets = newPoets.filter((poet) => unifyString(poet.bornCity) === unifyString(city))
   }
 
-  if (userInput.length <= 1) {
+  if (userInput.length <= 2) {
     return newPoets
   }
 
