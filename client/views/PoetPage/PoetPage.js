@@ -15,12 +15,7 @@ import defineContentForLang from '../../helpers/defineContentForLang'
 
 class PoetPage extends React.Component {
   state = {
-<<<<<<< HEAD
-    poetInfo: contentPoetsRu[0],
-    choosedPoetId: 2
-=======
     currentContent: []
->>>>>>> ca04f9c6bd075ce678165b09c27a29b18eabb5c7
   }
 
   componentDidMount() {
