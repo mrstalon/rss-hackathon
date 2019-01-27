@@ -9,6 +9,7 @@
   "author": "mrstalon",
   "license": "ISC",
   "dependencies": {
+    "google-map-react": "^1.1.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
