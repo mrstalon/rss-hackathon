@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 import './poet-page.scss'
 
@@ -10,32 +11,44 @@ import PoetPhotoGallary from './components/PoetPhotoGallary/PoetPhotoGallary'
 import PoetVideo from './components/PoetVideo/PoetVideo'
 import PoetMap from './components/PoetMap/PoetMap'
 
-// пока что хардкодь информацию по поэту в этом файле
-// потом когда доделаешь полностью, я прикручу перевод контента
-import contentPoetsRu from '../../content/poets-ru'
-import contentPoetsBy from '../../content/poets-by'
-import contentPoetsEn from '../../content/poets-en'
+import defineContentForLang from '../../helpers/defineContentForLang'
 
 class PoetPage extends React.Component {
   state = {
+<<<<<<< HEAD
     poetInfo: contentPoetsRu[0],
     choosedPoetId: 2
+=======
+    currentContent: []
+>>>>>>> ca04f9c6bd075ce678165b09c27a29b18eabb5c7
+  }
+
+  componentDidMount() {
+    const { lang, choosedPoetId, history } = this.props
+
+    if (choosedPoetId === null) {
+      history.push('/search')
+    }
+
+    const currentContent = defineContentForLang(lang)
+    this.setState({ currentContent })
+  }
+
+  static getDerivedStateFromProps = (nextProps) => {
+    const currentContent = defineContentForLang(nextProps.lang)
+    return { currentContent }
   }
 
   render() {
-    // Благодаря функции connect у вас в this.props появится
-    // свойство lang: currentLang ('ru' or 'by' or 'en')
-    const { lang } = this.props
-    const { choosedPoetId } = this.state
-    let choosedPoetContent
-
-    if (lang === 'ru') {
-      choosedPoetContent = contentPoetsRu[choosedPoetId]
-    } else if (lang === 'en') {
-      choosedPoetContent = contentPoetsEn[choosedPoetId]
-    } else {
-      choosedPoetContent = contentPoetsBy[choosedPoetId]
+    const { currentContent } = this.state
+    const { lang, choosedPoetId } = this.props
+    console.log(currentContent)
+    if (!choosedPoetId) {
+      return null
     }
+
+    const choosedPoetContent = currentContent[choosedPoetId]
+
 
     return (
       <div className="poet-page">
@@ -69,8 +82,9 @@ class PoetPage extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    lang: state.langInfo.lang
+    lang: state.langInfo.lang,
+    choosedPoetId: state.choosedPoetId
   }
 }
 
-export default connect(mapStateToProps)(PoetPage)
+export default withRouter(connect(mapStateToProps)(PoetPage))

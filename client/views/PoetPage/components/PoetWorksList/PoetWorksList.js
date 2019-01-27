@@ -6,18 +6,15 @@ class PoetWorksList extends React.Component {
   state = {
     content: {
       ru: {
-        title: 'Привет из списка произведений поэта'
+        title: 'Библиография'
       },
       en: {
-        title: 'Hello from poet works list'
+        title: 'WorksBiography'
+      },
+      by: {
+        title: 'Бібліяграфія'
       }
-      // 'by': {
-      //   title: '...'
-      // }
     },
-
-    // по дефолту язык будет русским
-    currentContent: null
   }
 
   render() {
@@ -27,7 +24,7 @@ class PoetWorksList extends React.Component {
 
     return (
       <div className="poet__worklist--container">
-        <h2 className="poet__worklist--title">Библиография</h2>
+        <h2 className="poet__worklist--title">{currentContent.title}</h2>
         <div className="poet__worklist-main">
           <WorksTable composition={composition} />
         </div>

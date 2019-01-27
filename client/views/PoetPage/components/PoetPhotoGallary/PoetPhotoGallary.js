@@ -7,7 +7,17 @@ class PoetPhotoGallary extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      // по дефолту язык будет русским
+      content: {
+        ru: {
+          title: 'Галлерея'
+        },
+        en: {
+          title: 'Gallary'
+        },
+        by: {
+          title: 'Галэрэя'
+        }
+      },
       currentContent: null,
       visible: false,
       choosePhotoId: 0
@@ -17,6 +27,7 @@ class PoetPhotoGallary extends React.Component {
   render() {
     const { content } = this.state
     const { lang, gallery } = this.props
+    const currentContent = content[lang]
 
     const imagesCollection = gallery.map((el) => {
       return { src: require(`../../../../content/${el.src}`), key: el.id }
@@ -37,7 +48,7 @@ class PoetPhotoGallary extends React.Component {
 
     return (
       <div className="poet__gallery--container">
-        <h2 className="poet__gallery--title">Галлерея</h2>
+        <h2 className="poet__gallery--title">{currentContent.title}</h2>
         <div className="poet__gallery--content">
           <ul className="poet__gallery--preview">{list}</ul>
 

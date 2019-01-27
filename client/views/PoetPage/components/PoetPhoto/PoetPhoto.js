@@ -6,18 +6,21 @@ class PoetPhoto extends React.Component {
   state = {
     content: {
       ru: {
-        title: 'Компонент фотография поэта'
+        bornLabel: 'Место рождения:',
+        livingPeriodLabel: 'Годы жизни:',
+        janreLabel: 'Жанр:'
       },
       en: {
-        title: 'Poet photo Component'
+        bornLabel: 'Born place:',
+        livingPeriodLabel: 'Living period:',
+        janreLabel: 'Janre:'
+      },
+      by: {
+        bornLabel: 'Месца нараджэння:',
+        livingPeriodLabel: 'Годы жыцця:',
+        janreLabel: 'Жанр:'
       }
-      // 'by': {
-      //   title: '...'
-      // }
-    },
-
-    // по дефолту язык будет русским
-    currentContent: null
+    }
   }
 
   render() {
@@ -32,17 +35,17 @@ class PoetPhoto extends React.Component {
         <div className="poet__photo--info">
           <h1 className="poet__photo--name">{name}</h1>
           <div className="poet__photo--born">
-            <strong>Место рождения:</strong>
+            <strong>{currentContent.bornLabel}</strong>
             <br />
             <span>{`${born.city}, ${born.country}`}</span>
           </div>
           <div className="poet__photo--period">
-            <strong>Годы жизни:</strong>
+            <strong>{currentContent.livingPeriodLabel}</strong>
             <br />
             <span>{period}</span>
           </div>
           <div className="poet__photo--genre">
-            <strong>Жанр:</strong>
+            <strong>{currentContent.janreLabel}</strong>
             <br />
             <span>{genre}</span>
           </div>

@@ -10,14 +10,14 @@ class PoetVideo extends React.Component {
     this.state = {
       content: {
         ru: {
-          title: 'Привет из видео поэта'
+          title: 'Видео'
         },
         en: {
-          title: 'Hello from poet video'
+          title: 'Video'
         },
-        // 'by': {
-        //   title: '...'
-        // }
+        by: {
+          title: 'Відэа'
+        },
         currentContent: null,
         isOpen: false
       }
@@ -44,7 +44,7 @@ class PoetVideo extends React.Component {
 
     return (
       <div className="poet__video--container">
-        <h2 className="poet__video--title">Видео</h2>
+        <h2 className="poet__video--title">{currentContent.title}</h2>
         <div className="poet__video--wrapper" onClick={this.openModal}>
           <YouTube className="poet__video" videoId={link} opts={opts} />
         </div>
