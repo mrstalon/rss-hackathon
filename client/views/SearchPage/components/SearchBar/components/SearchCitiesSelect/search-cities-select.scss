@@ -1,0 +1,20 @@
+.search-bar__cities-select-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+
+  span {
+    font-size: 22px;  
+  }
+}
+
+.search-bar__cities-select {
+  margin-left: 20px;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  background-color: #3FAE49;
+  color: white;
+  border: 0;
+}
