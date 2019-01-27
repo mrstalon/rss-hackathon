@@ -9,10 +9,6 @@ import PoetsList from './components/PoetsList'
 
 import filterPoets from '../../../../helpers/filterPoets'
 
-import poetsListRu from '../../../../content/poets-ru'
-import poetsListBy from '../../../../content/poets-by'
-import poetsListEn from '../../../../content/poets-en'
-
 import defineContentForLang from '../../../../helpers/defineContentForLang'
 
 class SearchBar extends React.Component {
@@ -49,13 +45,27 @@ class SearchBar extends React.Component {
         }
       })
       .sort((a, b) => ('' + a.name).localeCompare(b.name))
-    const poetsCities = poetsListRu.map((poet) => poet.biographyContent[0].born.city)
+    const poetsCities = currentPoetsContent.map((poet) => poet.biographyContent[0].born.city)
     this.setState({ searchedPoets, allPoetsCities: poetsCities, poets: searchedPoets })
   }
 
   static getDerivedStateFromProps = (nextProps, prevState) => {
-    const currentContent = defineContentForLang(nextProps.lang)
     const { searchedPoets } = prevState
+    const currentContent = defineContentForLang(nextProps.lang)
+
+    const originalPoets = currentContent
+      .map((poet) => {
+        return {
+          name: poet.name,
+          id: poet.id,
+          avatarName: poet.avatarName,
+          bornCity: poet.biographyContent[0].born.city
+        }
+      })
+      .sort((a, b) => ('' + a.name).localeCompare(b.name))
+
+    const poetsCities = currentContent.map((poet) => poet.biographyContent[0].born.city)
+
     const newPoets = searchedPoets.map((poet) => {
       const poetToInsert = currentContent.find((p) => p.id === poet.id)
       return {
@@ -65,7 +75,7 @@ class SearchBar extends React.Component {
         bornCity: poetToInsert.biographyContent[0].born.city
       }
     })
-    return { searchedPoets: newPoets }
+    return { searchedPoets: newPoets, poets: originalPoets, allPoetsCities: poetsCities }
   }
 
   handleInputChange = (e) => {

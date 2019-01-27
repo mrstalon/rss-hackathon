@@ -6,6 +6,9 @@ export default (userInp, city, originalPoets) => {
   let newPoets = [...originalPoets]
   const userInput = unifyString(userInp)
 
+  console.log(userInput)
+  console.log(newPoets.map(e => e.name))
+
   const unifiedCity = unifyString(city)
   if (
     city &&
