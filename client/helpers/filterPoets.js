@@ -4,7 +4,7 @@ const unifyString = (string) => string.trim().toLowerCase()
 
 export default (userInp, city, originalPoets) => {
   let newPoets = [...originalPoets]
-  const userInput = userInp.trim()
+  const userInput = unifyString(userInp)
 
   const unifiedCity = unifyString(city)
   if (
@@ -16,18 +16,6 @@ export default (userInp, city, originalPoets) => {
     newPoets = newPoets.filter((poet) => unifyString(poet.bornCity) === unifyString(city))
   }
 
-  if (userInput.length <= 2) {
-    return newPoets
-  }
-
-  const matches = stringSimilarity.findBestMatch(userInput, newPoets.map((e) => e.name)).ratings
-  return matches
-    .map((matchObj) => {
-      const poetName = matchObj.target
-      if (matchObj.rating > 0) {
-        return newPoets.find((e) => unifyString(e.name) === unifyString(poetName))
-      }
-      return
-    })
-    .filter((e) => e)
+  const regex = new RegExp(`${userInput}`, 'i')
+  return newPoets.sort().filter(v => regex.test(unifyString(v.name)))
 }
