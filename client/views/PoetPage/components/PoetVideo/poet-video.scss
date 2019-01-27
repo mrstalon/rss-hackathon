@@ -7,7 +7,7 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px;
   margin-bottom: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 .poet__video {
@@ -19,7 +19,12 @@
 
 .poet__video--wrapper {
   cursor: pointer;
-  height: 390px;
-  width: 640px;
-  margin: auto;
+  height: auto;
+  width: 100%;
+
+  div {
+    iframe {
+      width: 100%;
+    }
+  }
 }

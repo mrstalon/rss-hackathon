@@ -17,12 +17,18 @@
 }
 
 .poet__photo--info {
-  margin: 0 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
+
+  div {
+    text-align: center;
+  }
 }
 
 .poet__photo--info > * {
-  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .poet__photo--info strong {
@@ -31,16 +37,42 @@
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 880px) {
+  .poet__photo--name {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .poet__photo--name {
+    font-size: 3vw;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .poet__photo--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .poet__photo--img {
     width: 200px;
     height: 290px;
+  }
+
+  .poet__photo--name {
+    font-size: 5vw;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .poet__photo--img {
-    width: 100px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .poet__photo--name {
+    margin-top: 30px;
+    font-size: 8vw;
   }
 }

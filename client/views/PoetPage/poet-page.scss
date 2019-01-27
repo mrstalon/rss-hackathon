@@ -1,6 +1,22 @@
 .poet-page {
-  width: 55%;
+  width: 850px;
   margin: auto;
   padding-top: 120px;
   line-height: 1.5;
+
+  div {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 880px) {
+  .poet-page {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .poet-page {
+    width: 95%;
+  }
 }
