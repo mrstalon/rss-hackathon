@@ -4,7 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 
 class PoetBiography extends React.Component {
-
   render() {
     const { lang, description } = this.props
 

@@ -7,18 +7,6 @@ class PoetPhotoGallary extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      content: {
-        ru: {
-          title: 'Привет из галереи поэта'
-        },
-        en: {
-          title: 'Hello from poet gallary'
-        }
-        // 'by': {
-        //   title: '...'
-        // }
-      },
-
       // по дефолту язык будет русским
       currentContent: null,
       visible: false,
@@ -29,7 +17,6 @@ class PoetPhotoGallary extends React.Component {
   render() {
     const { content } = this.state
     const { lang, gallery } = this.props
-    const currentContent = content[lang]
 
     const imagesCollection = gallery.map((el) => {
       return { src: require(`../../../../content/${el.src}`), key: el.id }
