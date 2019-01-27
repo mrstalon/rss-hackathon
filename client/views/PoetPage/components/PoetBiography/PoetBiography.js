@@ -25,6 +25,7 @@ class PoetBiography extends React.Component {
     const { content } = this.state
     const { lang, description } = this.props
     const currentContent = content[lang]
+
     const elements = description.map((el) => {
       return (
         <VerticalTimelineElement
@@ -43,10 +44,7 @@ class PoetBiography extends React.Component {
         <h2 className="poet__biography--title">Биография</h2>
         <VerticalTimeline>
           {elements}
-          <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            // icon={<StarIcon />}
-          />
+          <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} />
         </VerticalTimeline>
       </div>
     )

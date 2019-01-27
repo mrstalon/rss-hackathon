@@ -32,7 +32,7 @@ class PoetPhoto extends React.Component {
         <div className="poet__photo--info">
           <h1 className="poet__photo--name">{name}</h1>
           <div className="poet__photo--born">
-            <strong>Родился:</strong>
+            <strong>Место рождения:</strong>
             <br />
             <span>{`${born.city}, ${born.country}`}</span>
           </div>
