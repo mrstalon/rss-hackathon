@@ -19,7 +19,7 @@ import contentPoetsEn from '../../content/poets-en'
 class PoetPage extends React.Component {
   state = {
     poetInfo: contentPoetsRu[0],
-    choosedPoetId: 5
+    choosedPoetId: 2
   }
 
   render() {
