@@ -5,12 +5,12 @@ import './poet-map.scss'
 class PoetMap extends React.Component {
   state = {
     content: {
-      'ru': {
+      ru: {
         title: 'Привет из карты поэта'
       },
-      'en': {
+      en: {
         title: 'Hello from poet map'
-      },
+      }
       // 'by': {
       //   title: '...'
       // }
@@ -26,8 +26,8 @@ class PoetMap extends React.Component {
     const currentContent = content[lang]
 
     return (
-      <div className="poet-map">
-        <h1>{currentContent.title}</h1>
+      <div className="poet__map--container">
+        <h2 className="poet__map--title">Места деятельности</h2>
       </div>
     )
   }

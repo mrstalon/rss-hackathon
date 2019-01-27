@@ -1,33 +1,69 @@
 import React from 'react'
-
+import Viewer from 'react-viewer'
+import 'react-viewer/dist/index.css'
 import './poet-photo-gallary.scss'
 
 class PoetPhotoGallary extends React.Component {
-  state = {
-    content: {
-      'ru': {
-        title: 'Привет из галереи поэта'
+  constructor(props) {
+    super(props)
+    this.state = {
+      content: {
+        ru: {
+          title: 'Привет из галереи поэта'
+        },
+        en: {
+          title: 'Hello from poet gallary'
+        }
+        // 'by': {
+        //   title: '...'
+        // }
       },
-      'en': {
-        title: 'Hello from poet gallary'
-      },
-      // 'by': {
-      //   title: '...'
-      // }
-    },
 
-    // по дефолту язык будет русским
-    currentContent: null
+      // по дефолту язык будет русским
+      currentContent: null,
+      visible: false,
+      choosePhotoId: 0
+    }
   }
 
   render() {
     const { content } = this.state
-    const { lang } = this.props
+    const { lang, imgName, gallery } = this.props
     const currentContent = content[lang]
+    const img = require(`../../../../assets/img/poet-1.jpg`)
+
+    const imagesCollection = gallery.map((el) => {
+      return { src: require(`../../../../assets/img/${el.src}`), key: el.id }
+    })
+
+    const list = imagesCollection.map((el, i) => {
+      return (
+        <li key={el.key}>
+          <img
+            src={el.src}
+            onClick={() => {
+              this.setState({ visible: !this.state.visible, choosePhotoId: i })
+            }}
+          />
+        </li>
+      )
+    })
 
     return (
-      <div className="poet-photo-gallary">
-        <h1>{currentContent.title}</h1>
+      <div className="poet__gallery--container">
+        <h2 className="poet__gallery--title">Галлерея</h2>
+        <div className="poet__gallery--content">
+          <ul className="poet__gallery--preview">{list}</ul>
+
+          <Viewer
+            visible={this.state.visible}
+            onClose={() => {
+              this.setState({ visible: false })
+            }}
+            images={imagesCollection}
+            activeIndex={this.state.choosePhotoId}
+          />
+        </div>
       </div>
     )
   }

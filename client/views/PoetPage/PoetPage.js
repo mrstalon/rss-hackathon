@@ -51,9 +51,16 @@ class PoetPage extends React.Component {
           lang={lang}
           description={choosedPoetContent.biographyContent[0].description}
         />
-        <PoetWorksList lang={lang} composition={choosedPoetContent.composition} />
-        <PoetPhotoGallary lang={lang} />
-        <PoetVideo lang={lang} />
+        <PoetWorksList
+          lang={lang}
+          composition={choosedPoetContent.biographyContent[0].composition}
+        />
+        <PoetPhotoGallary
+          lang={lang}
+          imgName={choosedPoetContent.avatarName}
+          gallery={choosedPoetContent.gallery}
+        />
+        <PoetVideo lang={lang} link={choosedPoetContent.biographyContent[0].video} />
         <PoetMap lang={lang} />
       </div>
     )
