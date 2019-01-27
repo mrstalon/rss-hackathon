@@ -55,6 +55,14 @@ export default [
         // video: 'https://www.youtube.com/watch?v=V5qnr3_cTf8'
         video: 'V5qnr3_cTf8'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'header-bg-0.jpg' },
+      { id: 2, src: 'header-bg-1.jpg' },
+      { id: 3, src: 'header-bg-2.jpg' },
+      { id: 4, src: 'header-bg-0.jpg' },
+      { id: 5, src: 'header-bg-2.jpg' },
+      { id: 6, src: 'header-bg-1.jpg' }
     ]
   },
   {
@@ -80,6 +88,14 @@ export default [
         // video: 'https://www.youtube.com/watch?v=6bOw-U-ezuw'
         video: '6bOw-U-ezuw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'header-bg-0.jpg' },
+      { id: 2, src: 'header-bg-1.jpg' },
+      { id: 3, src: 'header-bg-2.jpg' },
+      { id: 4, src: 'header-bg-0.jpg' },
+      { id: 5, src: 'header-bg-2.jpg' },
+      { id: 6, src: 'header-bg-1.jpg' }
     ]
   },
   {
@@ -106,6 +122,14 @@ export default [
         // video: 'https://www.youtube.com/watch?v=-L3wz8QQbAs'
         video: '-L3wz8QQbAs'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'header-bg-0.jpg' },
+      { id: 2, src: 'header-bg-1.jpg' },
+      { id: 3, src: 'header-bg-2.jpg' },
+      { id: 4, src: 'header-bg-0.jpg' },
+      { id: 5, src: 'header-bg-2.jpg' },
+      { id: 6, src: 'header-bg-1.jpg' }
     ]
   },
   {
@@ -133,20 +157,14 @@ export default [
         video: 'sWPk3sk6m6k'
       }
     ],
-    composition: [
-      { id: 1, name: 'composition_1', year: '1950' },
-      { id: 2, name: 'composition_2', year: '1951' },
-      { id: 3, name: 'composition_3', year: '1952' },
-      { id: 4, name: 'composition_4', year: '1953' },
-      { id: 5, name: 'composition_5', year: '1954' },
-      { id: 6, name: 'composition_6', year: '1955' },
-      { id: 7, name: 'composition_7', year: '1956' },
-      { id: 8, name: 'composition_8', year: '1957' },
-      { id: 9, name: 'composition_9', year: '1958' },
-      { id: 10, name: 'composition_10', year: '1959' },
-      { id: 11, name: 'composition_11', year: '1960' }
-    ],
-    video: 'GgB-s8_8TcM'
+    gallery: [
+      { id: 1, src: 'header-bg-0.jpg' },
+      { id: 2, src: 'header-bg-1.jpg' },
+      { id: 3, src: 'header-bg-2.jpg' },
+      { id: 4, src: 'header-bg-0.jpg' },
+      { id: 5, src: 'header-bg-2.jpg' },
+      { id: 6, src: 'header-bg-1.jpg' }
+    ]
   },
   {
     id: 5,
@@ -172,6 +190,14 @@ export default [
         // video: 'https://www.youtube.com/watch?v=nw4eWICjiyw'
         video: 'nw4eWICjiyw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'header-bg-0.jpg' },
+      { id: 2, src: 'header-bg-1.jpg' },
+      { id: 3, src: 'header-bg-2.jpg' },
+      { id: 4, src: 'header-bg-0.jpg' },
+      { id: 5, src: 'header-bg-2.jpg' },
+      { id: 6, src: 'header-bg-1.jpg' }
     ]
   }
 ]
