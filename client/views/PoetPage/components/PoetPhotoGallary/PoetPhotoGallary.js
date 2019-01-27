@@ -2,7 +2,6 @@ import React from 'react'
 import Viewer from 'react-viewer'
 import 'react-viewer/dist/index.css'
 import './poet-photo-gallary.scss'
-import { changeLanguage } from 'actions/lang'
 
 class PoetPhotoGallary extends React.Component {
   constructor(props) {
@@ -22,7 +21,8 @@ class PoetPhotoGallary extends React.Component {
 
       // по дефолту язык будет русским
       currentContent: null,
-      visible: false
+      visible: false,
+      choosePhotoId: 0
     }
   }
 
@@ -36,13 +36,13 @@ class PoetPhotoGallary extends React.Component {
       return { src: require(`../../../../assets/img/${el.src}`), key: el.id }
     })
 
-    const list = imagesCollection.map((el) => {
+    const list = imagesCollection.map((el, i) => {
       return (
         <li key={el.key}>
           <img
             src={el.src}
             onClick={() => {
-              this.setState({ visible: !this.state.visible })
+              this.setState({ visible: !this.state.visible, choosePhotoId: i })
             }}
           />
         </li>
@@ -61,6 +61,7 @@ class PoetPhotoGallary extends React.Component {
               this.setState({ visible: false })
             }}
             images={imagesCollection}
+            activeIndex={this.state.choosePhotoId}
           />
         </div>
       </div>

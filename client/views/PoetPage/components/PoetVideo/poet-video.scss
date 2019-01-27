@@ -14,4 +14,12 @@
   border: 4px solid #ccc;
   border-radius: 5px;
   box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+.poet__video--wrapper {
+  cursor: pointer;
+  height: 390px;
+  width: 640px;
+  margin: auto;
 }

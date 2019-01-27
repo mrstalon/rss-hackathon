@@ -1,23 +1,32 @@
 import React from 'react'
 import './poet-video.scss'
 import YouTube from 'react-youtube'
+import ModalVideo from 'react-modal-video'
+import '../../../../../node_modules/react-modal-video/scss/modal-video.scss'
 
 class PoetVideo extends React.Component {
-  state = {
-    content: {
-      ru: {
-        title: 'Привет из видео поэта'
-      },
-      en: {
-        title: 'Hello from poet video'
+  constructor(props) {
+    super(props)
+    this.state = {
+      content: {
+        ru: {
+          title: 'Привет из видео поэта'
+        },
+        en: {
+          title: 'Hello from poet video'
+        },
+        // 'by': {
+        //   title: '...'
+        // }
+        currentContent: null,
+        isOpen: false
       }
-      // 'by': {
-      //   title: '...'
-      // }
-    },
+    }
+    this.openModal = this.openModal.bind(this)
+  }
 
-    // по дефолту язык будет русским
-    currentContent: null
+  openModal() {
+    this.setState({ isOpen: true })
   }
 
   render() {
@@ -36,7 +45,15 @@ class PoetVideo extends React.Component {
     return (
       <div className="poet__video--container">
         <h2 className="poet__video--title">Видео</h2>
-        <YouTube className="poet__video" videoId={link} opts={opts} onReady={this._onReady} />
+        <div className="poet__video--wrapper" onClick={this.openModal}>
+          <YouTube className="poet__video" videoId={link} opts={opts} />
+        </div>
+        <ModalVideo
+          channel="youtube"
+          isOpen={this.state.isOpen}
+          videoId={link}
+          onClose={() => this.setState({ isOpen: false })}
+        />
       </div>
     )
   }
