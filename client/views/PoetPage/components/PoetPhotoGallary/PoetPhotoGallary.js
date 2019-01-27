@@ -49,8 +49,6 @@ class PoetPhotoGallary extends React.Component {
       )
     })
 
-    console.log(list)
-
     return (
       <div className="poet__gallery--container">
         <h2 className="poet__gallery--title">Галлерея</h2>
