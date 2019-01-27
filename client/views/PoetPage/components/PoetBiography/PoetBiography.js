@@ -4,8 +4,24 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 
 class PoetBiography extends React.Component {
+  state = {
+    content: {
+      ru: {
+        title: 'Биография:'
+      },
+      en: {
+        title: 'Biography:'
+      },
+      by: {
+        title: 'Быяграф'
+      }
+    }
+  }
+
   render() {
-    const { lang, description } = this.props
+    const { description, lang } = this.props
+    const { content } = this.state
+    const currentContent = content[lang]
 
     const elements = description.map((el) => {
       return (
@@ -22,7 +38,7 @@ class PoetBiography extends React.Component {
 
     return (
       <div className="poet__biography--container">
-        <h2 className="poet__biography--title">Биография</h2>
+        <h2 className="poet__biography--title">{currentContent.title}</h2>
         <VerticalTimeline>
           {elements}
           <VerticalTimelineElement iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }} />
