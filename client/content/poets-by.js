@@ -19,8 +19,13 @@ export default [
           { id: 4, name: 'Калі зліваюцца рэкі', year: '1957' },
           { id: 5, name: 'Маладым сябрам', year: '1961' }
         ],
-        video: 'https://www.youtube.com/watch?v=y7q6WXFqP2I'
+        video: 'y7q6WXFqP2I'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_PyotrUstinovichBrovka-1.jpg' },
+      { id: 2, src: 'poets_PyotrUstinovichBrovka-2.jpg' },
+      { id: 3, src: 'poets_PyotrUstinovichBrovka-3.jpg' }
     ]
   },
   {
@@ -41,8 +46,12 @@ export default [
           { id: 2, name: 'Табе: Вершы', year: '1927' },
           { id: 3, name: 'Суседзі: Гумарэскі і фельетоны', year: '1932' }
         ],
-        video: 'https://www.youtube.com/watch?v=V5qnr3_cTf8'
+        video: 'V5qnr3_cTf8'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AnatolVolny-1.jpg' },
+      { id: 2, src: 'poets_AnatolVolny-2.jpg' }
     ]
   },
   {
@@ -64,8 +73,13 @@ export default [
           { id: 3, name: 'Начныя думкі', year: '1908' },
           { id: 4, name: 'Матчын дар і іншыя творы', year: '1962' }
         ],
-        video: 'https://www.youtube.com/watch?v=6bOw-U-ezuw'
+        video: '6bOw-U-ezuw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AlesHarun-1.jpg' },
+      { id: 2, src: 'poets_AlesHarun-2.jpg' },
+      { id: 3, src: 'poets_AlesHarun-3.jpg' }
     ]
   },
   {
@@ -88,8 +102,14 @@ export default [
           { id: 4, name: 'сшыткі', year: '2003' },
           { id: 5, name: 'сучаснікі', year: '2006' }
         ],
-        video: 'https://www.youtube.com/watch?v=-L3wz8QQbAs'
+        video: '-L3wz8QQbAs'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AdamHlobus-1.jpg' },
+      { id: 2, src: 'poets_AdamHlobus-2.jpg' },
+      { id: 3, src: 'poets_AdamHlobus-3.jpg' },
+      { id: 4, src: 'poets_AdamHlobus-4.jpg' }
     ]
   },
   {
@@ -112,8 +132,12 @@ export default [
           { id: 4, name: 'Як я вучыўся жыць', year: '1974' },
           { id: 5, name: 'Русалка на Нарачы', year: '1974' }
         ],
-        video: 'https://www.youtube.com/watch?v=sWPk3sk6m6k'
+        video: 'sWPk3sk6m6k'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_NilHilevich-1.jpg' },
+      { id: 2, src: 'poets_NilHilevich-2.jpg' }
     ]
   },
   {
@@ -136,8 +160,12 @@ export default [
           { id: 4, name: 'Маці і сын', year: '1992' },
           { id: 5, name: 'Выбр ', year: '1997' }
         ],
-        video: 'https://www.youtube.com/watch?v=nw4eWICjiyw'
+        video: 'nw4eWICjiyw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_LarysaHienijus-1.jpg' },
+      { id: 2, src: 'poets_LarysaHienijus-2.jpg' }
     ]
   }
 ]
