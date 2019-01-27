@@ -1,13 +1,8 @@
-import stringSimilarity from 'string-similarity'
-
 const unifyString = (string) => string.trim().toLowerCase()
 
 export default (userInp, city, originalPoets) => {
   let newPoets = [...originalPoets]
   const userInput = unifyString(userInp)
-
-  console.log(userInput)
-  console.log(newPoets.map(e => e.name))
 
   const unifiedCity = unifyString(city)
   if (
