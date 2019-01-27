@@ -28,12 +28,11 @@ class PoetPhotoGallary extends React.Component {
 
   render() {
     const { content } = this.state
-    const { lang, imgName, gallery } = this.props
+    const { lang, gallery } = this.props
     const currentContent = content[lang]
-    const img = require(`../../../../assets/img/poet-1.jpg`)
 
     const imagesCollection = gallery.map((el) => {
-      return { src: require(`../../../../assets/img/${el.src}`), key: el.id }
+      return { src: require(`../../../../content/${el.src}`), key: el.id }
     })
 
     const list = imagesCollection.map((el, i) => {
