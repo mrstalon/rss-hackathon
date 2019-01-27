@@ -20,8 +20,13 @@ export default [
           { id: 4, name: 'When rivers merge', year: '1957' },
           { id: 5, name: 'Young friends', year: '1961' }
         ],
-        video: 'https://www.youtube.com/watch?v=y7q6WXFqP2I'
+        video: 'y7q6WXFqP2I'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_PyotrUstinovichBrovka-1.jpg' },
+      { id: 2, src: 'poets_PyotrUstinovichBrovka-2.jpg' },
+      { id: 3, src: 'poets_PyotrUstinovichBrovka-3.jpg' }
     ]
   },
   {
@@ -43,8 +48,12 @@ export default [
           { id: 2, name: 'To you: poems', year: '1927' },
           { id: 3, name: 'Neighbors: Gumoreski and feuilletons', year: '1932' }
         ],
-        video: 'https://www.youtube.com/watch?v=V5qnr3_cTf8'
+        video: 'V5qnr3_cTf8'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AnatolVolny-1.jpg' },
+      { id: 2, src: 'poets_AnatolVolny-2.jpg' }
     ]
   },
   {
@@ -67,8 +76,13 @@ export default [
           { id: 3, name: 'Night thoughts', year: '1908' },
           { id: 4, name: 'Mother’s gift and other writings', year: '1962' }
         ],
-        video: 'https://www.youtube.com/watch?v=6bOw-U-ezuw'
+        video: 'v=6bOw-U-ezuw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AlesHarun-1.jpg' },
+      { id: 2, src: 'poets_AlesHarun-2.jpg' },
+      { id: 3, src: 'poets_AlesHarun-3.jpg' }
     ]
   },
   {
@@ -92,8 +106,14 @@ export default [
           { id: 4, name: 'Notebooks', year: '2003' },
           { id: 5, name: 'Contemporaries', year: '2006' }
         ],
-        video: 'https://www.youtube.com/watch?v=-L3wz8QQbAs'
+        video: 'v=-L3wz8QQbAs'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_AdamHlobus-1.jpg' },
+      { id: 2, src: 'poets_AdamHlobus-2.jpg' },
+      { id: 3, src: 'poets_AdamHlobus-3.jpg' },
+      { id: 4, src: 'poets_AdamHlobus-4.jpg' }
     ]
   },
   {
@@ -117,8 +137,12 @@ export default [
           { id: 4, name: 'How I Learnt to Live', year: '1974' },
           { id: 5, name: 'Mermaid in the Narach', year: '1974' }
         ],
-        video: 'https://www.youtube.com/watch?v=sWPk3sk6m6k'
+        video: 'v=sWPk3sk6m6k'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_NilHilevich-1.jpg' },
+      { id: 2, src: 'poets_NilHilevich-2.jpg' }
     ]
   },
   {
@@ -142,8 +166,12 @@ export default [
           { id: 4, name: 'Mother & son', year: '1992' },
           { id: 5, name: 'Choice', year: '1997' }
         ],
-        video: 'https://www.youtube.com/watch?v=nw4eWICjiyw'
+        video: 'v=nw4eWICjiyw'
       }
+    ],
+    gallery: [
+      { id: 1, src: 'poets_LarysaHienijus-1.jpg' },
+      { id: 2, src: 'poets_LarysaHienijus-2.jpg' }
     ]
   }
 ]
