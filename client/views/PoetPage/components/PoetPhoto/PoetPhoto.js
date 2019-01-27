@@ -34,7 +34,7 @@ class PoetPhoto extends React.Component {
           <div className="poet__photo--born">
             <strong>Родился:</strong>
             <br />
-            <span>{born}</span>
+            <span>{`${born.city}, ${born.country}`}</span>
           </div>
           <div className="poet__photo--period">
             <strong>Годы жизни:</strong>

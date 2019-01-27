@@ -27,11 +27,12 @@ class PoetVideo extends React.Component {
     const opts = {
       height: '390',
       width: '640',
+      // https://developers.google.com/youtube/player_parameters
       playerVars: {
-        // https://developers.google.com/youtube/player_parameters
         autoplay: 0
       }
     }
+
     return (
       <div className="poet__video--container">
         <h2 className="poet__video--title">Видео</h2>

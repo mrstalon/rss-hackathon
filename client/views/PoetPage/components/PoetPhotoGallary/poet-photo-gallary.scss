@@ -7,4 +7,22 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px;
   margin-bottom: 40px;
+  text-align: left;
+}
+
+.poet__gallery--preview {
+  list-style-type: none;
+  padding: 0;
+}
+
+.poet__gallery--preview li {
+  display: inline-block;
+}
+
+.poet__gallery--preview img {
+  vertical-align: bottom;
+  cursor: zoom-in;
+  width: 200px;
+  height: 200px;
+  margin: 2px;
 }
