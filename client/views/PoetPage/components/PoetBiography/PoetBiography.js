@@ -4,27 +4,9 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 
 class PoetBiography extends React.Component {
-  state = {
-    content: {
-      ru: {
-        title: 'Привет из биографии поэта'
-      },
-      en: {
-        title: 'Hello from poet biography'
-      }
-      // 'by': {
-      //   title: '...'
-      // }
-    },
-
-    // по дефолту язык будет русским
-    currentContent: null
-  }
 
   render() {
-    const { content } = this.state
     const { lang, description } = this.props
-    const currentContent = content[lang]
 
     const elements = description.map((el) => {
       return (
