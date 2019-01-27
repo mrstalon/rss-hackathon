@@ -154,7 +154,7 @@ export default [
           { id: 3, name: 'Night thoughts', year: '1908' },
           { id: 4, name: 'Mother’s gift and other writings', year: '1962' }
         ],
-        video: 'v=6bOw-U-ezuw'
+        video: '6bOw-U-ezuw'
       }
     ],
     gallery: [
@@ -208,7 +208,7 @@ export default [
           { id: 4, name: 'Notebooks', year: '2003' },
           { id: 5, name: 'Contemporaries', year: '2006' }
         ],
-        video: 'v=-L3wz8QQbAs'
+        video: '3wz8QQbAs'
       }
     ],
     gallery: [
@@ -269,7 +269,7 @@ export default [
           { id: 4, name: 'How I Learnt to Live', year: '1974' },
           { id: 5, name: 'Mermaid in the Narach', year: '1974' }
         ],
-        video: 'v=sWPk3sk6m6k'
+        video: 'sWPk3sk6m6k'
       }
     ],
     gallery: [
@@ -340,7 +340,7 @@ export default [
           { id: 4, name: 'Mother & son', year: '1992' },
           { id: 5, name: 'Choice', year: '1997' }
         ],
-        video: 'v=nw4eWICjiyw'
+        video: 'nw4eWICjiyw'
       }
     ],
     gallery: [

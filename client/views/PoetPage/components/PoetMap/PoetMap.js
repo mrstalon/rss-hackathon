@@ -35,15 +35,22 @@ class PoetMap extends React.Component {
       <div className="poet__map--container" style={{ height: '100vh', width: '100%' }}>
         <h2 className="poet__map--title">{currentContent.title}</h2>
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
+<<<<<<< HEAD
+          {/*<AnyReactComponent*/}
+            {/*lat={59.955413}*/}
+            {/*lng={30.337844}*/}
+            {/*text={'Kreyser Avrora'}*/}
+          {/*/>*/}
+=======
           {/* <AnyReactComponent
             lat={59.955413}
             lng={30.337844}
             text={'Kreyser Avrora'}
           /> */}
+>>>>>>> ca04f9c6bd075ce678165b09c27a29b18eabb5c7
         </GoogleMapReact>
       </div>
     )
