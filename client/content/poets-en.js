@@ -224,7 +224,7 @@ export default [
           { id: 4, name: 'Notebooks', year: '2003' },
           { id: 5, name: 'Contemporaries', year: '2006' }
         ],
-        video: '3wz8QQbAs'
+        video: '-L3wz8QQbAs'
       }
     ],
     gallery: [
