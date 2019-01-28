@@ -11,6 +11,7 @@ class HeaderContent extends React.Component {
     intervalId: null,
     currentBgPosition: 0
   }
+  headerBackground = React.createRef()
 
   componentDidMount() {
     const intervalId = setInterval(() => {
@@ -35,18 +36,18 @@ class HeaderContent extends React.Component {
   }
 
   changeHeaderBg = (nextBgPosition) => {
+    const { headerBackground } = this
     const bgName = headerBgList[nextBgPosition]
     const newBgImg = require(`../../../../../../assets/img/${bgName}`)
-    const main = document.querySelector('.header-content__bg-image')
-    main.style.background = `url(${newBgImg}) no-repeat`
-    main.style.backgroundSize = 'cover';
-    main.style.backgroundPosition = 'center center';
+    headerBackground.current.style.background = `url(${newBgImg}) no-repeat`
+    headerBackground.current.style.backgroundSize = 'cover';
+    headerBackground.current.style.backgroundPosition = 'center center';
   }
 
   render() {
     return (
       <main className="header-content">
-        <div className="header-content__bg-image"></div>
+        <div className="header-content__bg-image" ref={this.headerBackground}></div>
         <ProjectDescription />
       </main>
     )
