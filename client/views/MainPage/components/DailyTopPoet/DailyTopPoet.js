@@ -1,53 +1,81 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 import './daily-top-poet.scss'
+
+import getDailyPoet from '../../../../helpers/getDailyPoet'
+
+import { changeChoosedPoetId, changeTopPoetId } from '../../../../actions/poet'
 
 class DailyTopPoet extends React.Component {
   state = {
     content: {
-      'ru': {
-        title: 'Привет из автора дня'
+      ru: {
+        title: 'Поэт дня'
       },
-      'en': {
-        title: 'Hello from daily top poet'
+      en: {
+        title: 'Daily top poet'
       },
-      'by': {
-        title: '...'
+      by: {
+        title: 'Паэт дня'
       }
     },
+    lang: null,
+    currentContent: null,
+    poetId: null
+  }
 
-    // по дефолту язык будет русским
-    currentContent: {
-      title: 'Привет из автора дня'
-    }
+  redirect = () => {
+    const { history, dispatch } = this.props
+    const { poetId } = this.state
+    dispatch(changeChoosedPoetId(poetId))
+    history.push('/poet')
   }
 
   componentDidMount() {
-    // Благодаря функции connect у вас в this.props появится
-    // свойство lang: currentLang ('ru' or 'by' or 'en')
-    this.setState((state, props) => {
-      return {
-        currentContent: state.content[props.lang]
-      }
-    })
+    if (this.props.poetId !== null) {
+      this.setState({poetId: this.props.poetId})
+    }
   }
 
-  componentWillReceiveProps(newProps) {
-    // componentWillReceiveProps вызовется когда данному компоненту будут переданы новые props
-    // в данном случае у нас может меняться язык, поэтому мы обновляем 
-    // язык контента в state нашего компонента при изменении языка в this.props.lang
-    this.setState((state) => {
-      return {
-        currentContent: state.content[newProps.lang]
-      }
-    })
+  static getDerivedStateFromProps = (nextProps, prevState) => {
+    if (prevState.lang === nextProps.props) {
+      return null
+    }
+    let currentContent
+    if (prevState.poetId) {
+      currentContent = getDailyPoet(nextProps.lang, prevState.poetId)
+    } else {
+      currentContent = getDailyPoet(nextProps.lang)
+    }
+    nextProps.dispatch(changeTopPoetId(currentContent.id))
+    return { currentContent, lang: nextProps.lang, poetId: currentContent.id }
   }
 
   render() {
+    const { currentContent, content } = this.state
+    const { lang } = this.props
+    const { redirect } = this
+    const currentUIContent = content[lang]
+
+
+    const avatar = require(`../../../../assets/img/${currentContent.avatarName}`)
+    const name = currentContent.name
+    const { city, country } = currentContent.biographyContent[0].born
+    const timePeriod = currentContent.biographyContent[0].period
+
     return (
       <section className="daily-poet">
-        <h1>{this.state.currentContent.title}</h1>
+        <h1 className="daily-poet__title">{currentUIContent.title}</h1>
+        <div className="daily-poet-content-container">
+          <img src={avatar} className="daily-poet__avatar" onClick={redirect} />
+          <div className="daily-poet-content">
+            <h1 className="daily-poet-content__title">{name}</h1>
+            <h2>{`${city}, ${country}`}</h2>
+            <h3>{timePeriod}</h3>
+          </div>
+        </div>
       </section>
     )
   }
@@ -55,8 +83,9 @@ class DailyTopPoet extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    lang: state.langInfo.lang
+    lang: state.langInfo.lang,
+    poetId: state.topPoetId
   }
 }
 
-export default connect(mapStateToProps)(DailyTopPoet)
+export default withRouter(connect(mapStateToProps)(DailyTopPoet))
