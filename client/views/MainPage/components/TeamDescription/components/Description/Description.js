@@ -15,7 +15,7 @@ class Description extends React.Component {
         description:
           'Наша команда состоит из способных студентов знаменитой Rolling Scopes School, успешно прошедших второй этап обучения в школе.',
         alt: 'Фото',
-        names: ['Олеся Бондаренко', 'Artem Zekov', 'Виктор Беликов', 'Vlad Boltrukanis']
+        names: ['Олеся Бондаренко', 'Артем Зеков', 'Виктор Беликов', 'Vlad Boltrukanis']
       },
       en: {
         title: 'Our team',
@@ -29,7 +29,7 @@ class Description extends React.Component {
         description:
           'Наша каманда складаецца са здольных студэнтаў знакамітай Rolling Scopes School, якія паспяхова прайшлі другі этап навучання ў школе.',
         alt: 'Фота',
-        names: ['Алеся Бандарэнка', 'Artem Zekov', 'Віктар Белікаў', 'Vlad Boltrukanis']
+        names: ['Алеся Бандарэнка', 'Арцем Зекаў', 'Віктар Белікаў', 'Vlad Boltrukanis']
       }
     },
     persons: [
@@ -49,7 +49,7 @@ class Description extends React.Component {
       <section className="about">
         <div className="container">
           <div className="about-text">
-            <h3><a className="about-text-linkteam" href="#">{currentContent.title}</a></h3>
+            <h3><span className="about-text-linkteam">{currentContent.title}</span></h3>
             <p><i>{currentContent.description}</i></p>
           </div>
           <div className="team-members-list">
