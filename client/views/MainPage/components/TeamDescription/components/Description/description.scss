@@ -1,7 +1,6 @@
 .about {
   background-color: rgba(63, 174, 72, 0.355);
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: row;
 }
@@ -37,7 +36,7 @@ p {
 
 .about-container {
   text-align: center;
-  
+
   p {
     font-size: 1.2vw;
   }

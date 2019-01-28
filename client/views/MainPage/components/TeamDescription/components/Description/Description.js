@@ -1,21 +1,15 @@
 import React from 'react'
-
 import './description.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faVk, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 const alesia = require(`../../../../../../assets/img/Alesia.jpg`)
 const mrstalon = require('../../../../../../assets/img/mrstalon.jpg')
 const vbkoshak = require('../../../../../../assets/img/vbkoshak.jpg')
-const victor = require('../../../../../../assets/img/VictorBelikov.jpg')
+const victor = require('../../../../../../assets/img/_VictorBelikov.jpg')
 
-const mrstalonName = 'mrstalon'
-const vbkoshakName = 'VbKoshak'
-
-const alesiaGit = 'https://github.com/Lesechka'
-const mrstalonGit = 'https://github.com/mrstalon'
-const vbkoshakGit = 'https://github.com/VbKoshak'
-const victorGit = 'https://github.com/VictorBelikov'
-
-const git = 'GitHub: '
+const mrstalonName = 'Artem Zekov'
+const vbkoshakName = 'Vlad Boltrukanis'
 
 class Description extends React.Component {
   state = {
@@ -57,7 +51,7 @@ class Description extends React.Component {
         <div className="container">
           <div className="about-text">
             <h3>
-              <a class="about-text-link" href="#">
+              <a className="about-text-linkteam" href="#">
                 {currentContent.title}
               </a>
             </h3>
@@ -68,66 +62,85 @@ class Description extends React.Component {
 
           <div className="team-members-list">
             <div className="about-container">
-              <img src={alesia} alt={currentContent.alt} height="190" width="190" />
+              <img className="team__members--avatar" src={alesia} alt={currentContent.alt}
+                   height="190" width="190"/>
               <div className="about-photo-item1">
                 <p className="about-photo-item-name">
                   <b>{currentContent.nameAlesia}</b>
                 </p>
                 <p>
-                  <i>{git}</i>
-                </p>
-                <p>
-                  <a class="about-text-link" href="https://github.com/Lesechka">
-                    {alesiaGit}
+                  <a target="_blank" className="about-text-link" href="https://github.com/Lesechka">
+                    <FontAwesomeIcon icon={faLinkedinIn} size="3x"/>
+                  </a>
+                  <a target="_blank" className="about-text-link" href="https://github.com/Lesechka">
+                    <FontAwesomeIcon icon={faGithub} size="3x"/>
+                  </a>
+                  <a target="_blank" className="about-text-link" href="https://github.com/Lesechka">
+                    <FontAwesomeIcon icon={faVk} size="3x"/>
                   </a>
                 </p>
               </div>
             </div>
 
             <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={mrstalon} alt={currentContent.alt} height="190" width="190" />
+              <div className="about-photo-item"/>
+              <img className="team__members--avatar" src={mrstalon} alt={currentContent.alt}
+                   height="190" width="190"/>
               <p className="about-photo-item-name">
                 <b>{mrstalonName}</b>
               </p>
               <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/mrstalon">
-                  {mrstalonGit}
+                <a target="_blank" className="about-text-link" href="https://github.com/mrstalon">
+                  <FontAwesomeIcon icon={faLinkedinIn} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link" href="https://github.com/mrstalon">
+                  <FontAwesomeIcon icon={faGithub} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link" href="https://github.com/mrstalon">
+                  <FontAwesomeIcon icon={faVk} size="3x"/>
                 </a>
               </p>
             </div>
 
             <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={victor} alt={currentContent.alt} height="190" width="190" />
+              <div className="about-photo-item"/>
+              <img className="team__members--avatar" src={victor} alt={currentContent.alt}
+                   height="190" width="190"/>
               <p className="about-photo-item-name">
                 <b>{currentContent.nameVictor}</b>
               </p>
               <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/victorbelikov">
-                  {victorGit}
+                <a target="_blank" className="about-text-link"
+                   href="https://github.com/victorbelikov">
+                  <FontAwesomeIcon icon={faLinkedinIn} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link"
+                   href="https://github.com/victorbelikov">
+                  <FontAwesomeIcon icon={faGithub} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link"
+                   href="https://github.com/victorbelikov">
+                  <FontAwesomeIcon icon={faVk} size="3x"/>
                 </a>
               </p>
             </div>
 
             <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={vbkoshak} alt={currentContent.alt} height="190" width="190" />
+              <div className="about-photo-item"/>
+              <img className="team__members--avatar" src={vbkoshak} alt={currentContent.alt}
+                   height="190" width="190"/>
               <p className="about-photo-item-name">
                 <b>{vbkoshakName}</b>
               </p>
               <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/VbKoshak">
-                  {vbkoshakGit}
+                <a target="_blank" className="about-text-link" href="https://github.com/VbKoshak">
+                  <FontAwesomeIcon icon={faLinkedinIn} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link" href="https://github.com/VbKoshak">
+                  <FontAwesomeIcon icon={faGithub} size="3x"/>
+                </a>
+                <a target="_blank" className="about-text-link" href="https://github.com/VbKoshak">
+                  <FontAwesomeIcon icon={faVk} size="3x"/>
                 </a>
               </p>
             </div>
