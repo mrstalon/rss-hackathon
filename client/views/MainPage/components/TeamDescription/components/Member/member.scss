@@ -1,0 +1,19 @@
+.about-text-linkteam {
+  color: #3a3a3a;
+}
+
+.about-text-link {
+  display: inline-block;
+  color: #3a3a3a;
+  transition: color .5s, transform 0.5s;
+  margin: 0 10px
+}
+
+.about-text-link:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+
+.team__members--avatar {
+  background: red;
+}
