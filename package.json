@@ -5,7 +5,12 @@
   "scripts": {
     "client-watch": "webpack-dev-server --mode development --hot --inline",
     "client-build": "webpack --mode production --progress --hide-modules",
-    "server-watch": "node server/server.js"
+    "server-watch": "node server/server.js",
+    "heroku-postbuild": "bash prod-build/prod.sh"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
   },
   "author": "mrstalon",
   "license": "ISC",
