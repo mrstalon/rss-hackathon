@@ -28,7 +28,8 @@ class SearchBar extends React.Component {
     choosedCity: 'Не выбрано',
     poets: [],
     searchedPoets: [],
-    allPoetsCities: []
+    allPoetsCities: [],
+    lang: null
   }
 
   componentDidMount() {
@@ -46,7 +47,7 @@ class SearchBar extends React.Component {
       })
       .sort((a, b) => ('' + a.name).localeCompare(b.name))
     const poetsCities = currentPoetsContent.map((poet) => poet.biographyContent[0].born.city)
-    this.setState({ searchedPoets, allPoetsCities: poetsCities, poets: searchedPoets })
+    this.setState({ searchedPoets, allPoetsCities: poetsCities, poets: searchedPoets, lang })
   }
 
   static getDerivedStateFromProps = (nextProps, prevState) => {
@@ -64,6 +65,14 @@ class SearchBar extends React.Component {
       })
       .sort((a, b) => ('' + a.name).localeCompare(b.name))
 
+    if (nextProps.lang !== prevState.lang) {
+      return {
+        searchedPoets: originalPoets.map((poet) => ({...poet})),
+        lang: nextProps.lang,
+        userInput: ''
+      }
+    }
+
     const poetsCities = currentContent.map((poet) => poet.biographyContent[0].born.city)
 
     const newPoets = searchedPoets.map((poet) => {
@@ -75,7 +84,12 @@ class SearchBar extends React.Component {
         bornCity: poetToInsert.biographyContent[0].born.city
       }
     })
-    return { searchedPoets: newPoets, poets: originalPoets, allPoetsCities: poetsCities }
+    return {
+      searchedPoets: newPoets,
+      poets: originalPoets,
+      allPoetsCities: poetsCities,
+      lang: nextProps.lang
+    }
   }
 
   handleInputChange = (e) => {
