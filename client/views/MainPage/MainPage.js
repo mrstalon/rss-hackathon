@@ -5,7 +5,6 @@ import './main-page.scss'
 import Header from './components/Header/Header'
 import DailyPoet from './components/DailyTopPoet/DailyTopPoet'
 import TeamDescription from './components/TeamDescription/TeamDescription'
-import TeamContacts from './components/TeamContacts/TeamContacts'
 
 class MainPage extends React.Component {
   render() {
@@ -14,7 +13,6 @@ class MainPage extends React.Component {
         <Header />
         <DailyPoet />
         <TeamDescription />
-        <TeamContacts />
       </div>
     )
   }
