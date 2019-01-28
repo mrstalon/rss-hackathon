@@ -18,7 +18,13 @@ class PoetWorksList extends Component {
 
     return (
       <table className="poet__worklist-content">
-        <tbody>{compositions}</tbody>
+        <tbody>
+        <tr>
+          <th>Год издания</th>
+          <th>Книга</th>
+        </tr>
+        {compositions}
+        </tbody>
       </table>
     )
   }

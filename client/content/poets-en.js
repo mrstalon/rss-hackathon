@@ -3,6 +3,10 @@ export default [
     id: 0,
     name: 'Pyotr Ustinovich Brovka',
     avatarName: 'poets_PyotrUstinovichBrovka.jpg',
+    geolocation: {
+      coordinate: [54.937914, 28.383295],
+      text: 'Peter Ustinovich Brovka was born here.'
+    },
     biographyContent: [
       {
         born: {
@@ -57,6 +61,10 @@ export default [
     id: 1,
     name: 'Anatol Volny',
     avatarName: 'poets_AnatolVolny.jpg',
+    geolocation: {
+      coordinate: [53.511751, 28.147757],
+      text: 'Anatoly Ustinovich Volny was born here.'
+    },
     biographyContent: [
       {
         born: {
@@ -108,6 +116,10 @@ export default [
     id: 2,
     name: 'Ales Harun',
     avatarName: 'poets_AlesHarun.jpg',
+    geolocation: {
+      coordinate: [53.902496, 27.561481],
+      text: 'Ales Haroun was born here.'
+    },
     biographyContent: [
       {
         born: {
@@ -167,6 +179,10 @@ export default [
     id: 3,
     name: 'Adam Hlobus',
     avatarName: 'poets_AdamHlobus.jpg',
+    geolocation: {
+      coordinate: [53.685209, 27.131493],
+      text: 'Adam Globus was born here.'
+    },
     biographyContent: [
       {
         born: {
@@ -208,7 +224,7 @@ export default [
           { id: 4, name: 'Notebooks', year: '2003' },
           { id: 5, name: 'Contemporaries', year: '2006' }
         ],
-        video: '3wz8QQbAs'
+        video: '-L3wz8QQbAs'
       }
     ],
     gallery: [
@@ -222,6 +238,10 @@ export default [
     id: 4,
     name: 'Nil Hilevich',
     avatarName: 'poets_NilHilevich.jpg',
+    geolocation: {
+      coordinate: [54.006575, 27.877822],
+      text: 'Here was born Nil Semenovich Gilevich'
+    },
     biographyContent: [
       {
         born: {
@@ -281,6 +301,10 @@ export default [
     id: 5,
     name: 'Larysa Hienijus',
     avatarName: 'poets_LarysaHienijus.jpg',
+    geolocation: {
+      coordinate: [53.162947, 24.463991],
+      text: 'Here was born Larisa Antonovna Hienijus'
+    },
     biographyContent: [
       {
         born: {
