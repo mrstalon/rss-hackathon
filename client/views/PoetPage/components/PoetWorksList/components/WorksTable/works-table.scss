@@ -1,0 +1,39 @@
+.poet__worklist-content {
+  width: 100%;
+}
+
+.poet__worklist--year {
+  vertical-align: top;
+  width: 20%;
+}
+
+.poet__worklist-content td {
+  background: #f5d7bf;
+  padding: 10px;
+  transition: background .5s;
+}
+
+.poet__worklist-content {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: #ece9e0;
+  color: #656665;
+  border: 16px solid #ece9e0;
+  border-radius: 20px;
+  box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.poet__worklist-content th {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.poet__worklist-content tr {
+  cursor: pointer;
+}
+
+.poet__worklist-content tr:hover td {
+  background: #BA9D88;
+}
+
