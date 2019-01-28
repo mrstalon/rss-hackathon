@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   height: 600px;
+  padding-top: 40px;
+  padding-bottom: 180px;
 }
 
 .daily-poet__title {
@@ -11,15 +13,17 @@
 }
 
 .daily-poet-content-container {
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 .daily-poet-content {
   font-size: 2vw;
   display: flex;
-  width: 600px;
+  width: fit-content;
   flex-direction: column;
   margin-left: 20px;
 }
@@ -53,6 +57,10 @@
 }
 
 @media (max-width: 750px) {
+  .daily-poet {
+    padding-bottom: 40px;
+  }
+
   .daily-poet__avatar {
     width: 250px;
     height: 250px;
