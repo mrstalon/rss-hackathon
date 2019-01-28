@@ -1,0 +1,46 @@
+footer.poet__footer--container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #393939;
+  width: 100%;
+
+}
+
+footer.poet__footer--container p {
+  color: #45B04C;
+  font-weight: bold;
+  vertical-align: center;
+}
+
+footer.poet__footer--container div {
+  text-align: center;
+}
+
+.poet__footer--iconcontainer {
+  padding: 0;
+  list-style-type: none;
+}
+
+.poet__footer--iconcontainer li {
+  display: inline-block;
+  transition: transform 0.5s;
+  margin: 0 15px;
+}
+
+.poet__footer--iconcontainer li:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 500px) {
+  footer.poet__footer--container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 330px) {
+  footer.poet__footer--container p {
+    font-size: 10px;
+  }
+}

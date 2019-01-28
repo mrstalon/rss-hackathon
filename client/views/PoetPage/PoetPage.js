@@ -10,6 +10,8 @@ import PoetWorksList from './components/PoetWorksList/PoetWorksList'
 import PoetPhotoGallary from './components/PoetPhotoGallary/PoetPhotoGallary'
 import PoetVideo from './components/PoetVideo/PoetVideo'
 import PoetMap from './components/PoetMap/PoetMap'
+import PoetFooter from './components/PoetFooter/PoetFooter'
+
 
 import defineContentForLang from '../../helpers/defineContentForLang'
 
@@ -69,6 +71,7 @@ class PoetPage extends React.Component {
         />
         <PoetVideo lang={lang} link={choosedPoetContent.biographyContent[0].video}/>
         <PoetMap lang={lang} location={choosedPoetContent.geolocation}/>
+        <PoetFooter lang={lang}/>
       </div>
     )
   }
