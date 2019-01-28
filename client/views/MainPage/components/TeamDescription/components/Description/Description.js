@@ -1,21 +1,11 @@
 import React from 'react'
-
 import './description.scss'
+import Member from '.././Member/Member'
 
 const alesia = require(`../../../../../../assets/img/Alesia.jpg`)
 const mrstalon = require('../../../../../../assets/img/mrstalon.jpg')
+const victor = require('../../../../../../assets/img/_VictorBelikov.jpg')
 const vbkoshak = require('../../../../../../assets/img/vbkoshak.jpg')
-const victor = require('../../../../../../assets/img/VictorBelikov.jpg')
-
-const mrstalonName = 'mrstalon'
-const vbkoshakName = 'VbKoshak'
-
-const alesiaGit = 'https://github.com/Lesechka'
-const mrstalonGit = 'https://github.com/mrstalon'
-const vbkoshakGit = 'https://github.com/VbKoshak'
-const victorGit = 'https://github.com/VictorBelikov'
-
-const git = 'GitHub: '
 
 class Description extends React.Component {
   state = {
@@ -25,26 +15,29 @@ class Description extends React.Component {
         description:
           'Наша команда состоит из способных студентов знаменитой Rolling Scopes School, успешно прошедших второй этап обучения в школе.',
         alt: 'Фото',
-        nameAlesia: 'Олеся Бондаренко',
-        nameVictor: 'Виктор Беликов'
+        names: ['Олеся Бондаренко', 'Artem Zekov', 'Виктор Беликов', 'Vlad Boltrukanis']
       },
       en: {
         title: 'Our team',
         description:
           'Our team consists of capable students of the famous Rolling Scopes School who have successfully completed the second stage of the schooling.',
         alt: 'Photo',
-        nameAlesia: 'Alesia Bandarenka',
-        nameVictor: 'Victor Belikov'
+        names: ['Alesia Bandarenka', 'Artem Zekov', 'Victor Belikov', 'Vlad Boltrukanis']
       },
       by: {
         title: 'Наша каманда',
         description:
           'Наша каманда складаецца са здольных студэнтаў знакамітай Rolling Scopes School, якія паспяхова прайшлі другі этап навучання ў школе.',
         alt: 'Фота',
-        nameAlesia: 'Алеся Бандарэнка',
-        nameVictor: 'Віктар Белікаў'
+        names: ['Алеся Бандарэнка', 'Artem Zekov', 'Віктар Белікаў', 'Vlad Boltrukanis']
       }
-    }
+    },
+    persons: [
+      { id: 1, gitHub: 'https://github.com/Lesechka', photo: alesia },
+      { id: 2, gitHub: 'https://github.com/mrstalon', photo: mrstalon },
+      { id: 3, gitHub: 'https://github.com/victorbelikov', photo: victor },
+      { id: 4, gitHub: 'https://github.com/VbKoshak', photo: vbkoshak }
+    ]
   }
 
   render() {
@@ -56,81 +49,19 @@ class Description extends React.Component {
       <section className="about">
         <div className="container">
           <div className="about-text">
-            <h3>
-              <a class="about-text-link" href="#">
-                {currentContent.title}
-              </a>
-            </h3>
-            <p>
-              <i>{currentContent.description}</i>
-            </p>
+            <h3><a className="about-text-linkteam" href="#">{currentContent.title}</a></h3>
+            <p><i>{currentContent.description}</i></p>
           </div>
-
           <div className="team-members-list">
-            <div className="about-container">
-              <img src={alesia} alt={currentContent.alt} height="190" width="190" />
-              <div className="about-photo-item1">
-                <p className="about-photo-item-name">
-                  <b>{currentContent.nameAlesia}</b>
-                </p>
-                <p>
-                  <i>{git}</i>
-                </p>
-                <p>
-                  <a class="about-text-link" href="https://github.com/Lesechka">
-                    {alesiaGit}
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={mrstalon} alt={currentContent.alt} height="190" width="190" />
-              <p className="about-photo-item-name">
-                <b>{mrstalonName}</b>
-              </p>
-              <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/mrstalon">
-                  {mrstalonGit}
-                </a>
-              </p>
-            </div>
-
-            <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={victor} alt={currentContent.alt} height="190" width="190" />
-              <p className="about-photo-item-name">
-                <b>{currentContent.nameVictor}</b>
-              </p>
-              <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/victorbelikov">
-                  {victorGit}
-                </a>
-              </p>
-            </div>
-
-            <div className="about-container">
-              <div className="about-photo-item" />
-              <img src={vbkoshak} alt={currentContent.alt} height="190" width="190" />
-              <p className="about-photo-item-name">
-                <b>{vbkoshakName}</b>
-              </p>
-              <p>
-                <i>{git}</i>
-              </p>
-              <p>
-                <a class="about-text-link" href="https://github.com/VbKoshak">
-                  {vbkoshakGit}
-                </a>
-              </p>
-            </div>
+            {this.state.persons.map((person, i) => (
+              <Member
+                key={person.id}
+                photo={person.photo}
+                github={person.gitHub}
+                alt={currentContent.alt}
+                name={currentContent.names[i]}
+              />
+            ))}
           </div>
         </div>
       </section>

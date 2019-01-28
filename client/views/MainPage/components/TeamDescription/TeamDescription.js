@@ -1,8 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import './team-description.scss'
-
 import ProjectDescription from './components/Description'
 
 class HeaderContent extends React.Component {
