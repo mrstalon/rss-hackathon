@@ -28,7 +28,6 @@ class PoetMap extends React.Component {
       controls: ['zoomControl', 'fullscreenControl'],
     }
 
-
     return (
       <div className="poet__map--container" style={{ height: '100vh', width: '100%' }}>
         <h2 className="poet__map--title">{currentContent.title}</h2>

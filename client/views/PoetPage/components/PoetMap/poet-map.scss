@@ -1,7 +1,3 @@
-.poet__map--container {
-  margin-bottom: 100px;
-}
-
 .poet__map--title {
   border-bottom: 1px solid #bbbbbb;
   padding-bottom: 40px;
@@ -47,10 +43,16 @@
   .poet__map--container {
     width: 400px !important;
   }
+  .poet__map--map {
+    height: 300px;
+  }
 }
 
 @media (max-width: 410px) {
   .poet__map--container {
     width: 320px !important;
+  }
+  .poet__map--map {
+    height: 300px;
   }
 }
