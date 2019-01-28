@@ -12,7 +12,6 @@ class HeaderContent extends React.Component {
     currentBgPosition: 0,
     bgImages: null
   }
-  headerBackground = React.createRef()
 
   componentDidMount() {
     this.preloadBgImages()
@@ -41,25 +40,29 @@ class HeaderContent extends React.Component {
       } else {
         nextBgPosition = currentBgPosition + 1
       }
-      this.changeHeaderBg(nextBgPosition)
       this.setState({
         currentBgPosition: nextBgPosition
       })
     }, 3000)
   }
 
-  changeHeaderBg = (nextBgPosition) => {
-    const { headerBackground } = this
-    const { bgImages } = this.state
-    headerBackground.current.style.background = `url(${bgImages[nextBgPosition]}) no-repeat`
-    headerBackground.current.style.backgroundSize = 'cover';
-    headerBackground.current.style.backgroundPosition = 'center center';
-  }
-
   render() {
+    const { bgImages, currentBgPosition } = this.state
+    if (!bgImages) {
+      return null
+    }
+    const bgImage = bgImages[currentBgPosition]
+
     return (
       <main className="header-content">
-        <div className="header-content__bg-image" ref={this.headerBackground}></div>
+        <div
+          className="header-content__bg-image"
+          style={{
+            background: `url(${bgImage}) no-repeat`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center'
+          }}
+        />
         <ProjectDescription />
       </main>
     )
