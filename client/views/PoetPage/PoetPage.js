@@ -21,6 +21,7 @@ class PoetPage extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     const { lang, choosedPoetId, history } = this.props
 
     if (choosedPoetId === null) {
