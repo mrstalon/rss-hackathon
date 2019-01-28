@@ -38,3 +38,9 @@ footer.poet__footer--container div {
     justify-content: center;
   }
 }
+
+@media (max-width: 330px) {
+  footer.poet__footer--container p {
+    font-size: 10px;
+  }
+}
