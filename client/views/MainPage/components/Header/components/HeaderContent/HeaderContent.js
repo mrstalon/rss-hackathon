@@ -9,12 +9,31 @@ import headerBgList from '../../../../../../constants/header-bg-list'
 class HeaderContent extends React.Component {
   state = {
     intervalId: null,
-    currentBgPosition: 0
+    currentBgPosition: 0,
+    bgImages: null
   }
   headerBackground = React.createRef()
 
   componentDidMount() {
-    const intervalId = setInterval(() => {
+    this.preloadBgImages()
+    const intervalId = this.setAnimationInterval()
+    this.setState({ intervalId })
+  }
+
+  componentWillUnmount() {
+    const { intervalId } = this.state
+    clearInterval(intervalId)
+  }
+
+  preloadBgImages = () => {
+    const bgImages = headerBgList.map((imgPath) => {
+      return require(`../../../../../../assets/img/${imgPath}`)
+    })
+    this.setState({ bgImages })
+  }
+
+  setAnimationInterval = () => {
+    return setInterval(() => {
       const { currentBgPosition } = this.state
       let nextBgPosition
       if (currentBgPosition + 1 >= headerBgList.length) {
@@ -27,19 +46,12 @@ class HeaderContent extends React.Component {
         currentBgPosition: nextBgPosition
       })
     }, 3000)
-    this.setState({ intervalId })
-  }
-
-  componentWillUnmount() {
-    const { intervalId } = this.state
-    clearInterval(intervalId)
   }
 
   changeHeaderBg = (nextBgPosition) => {
     const { headerBackground } = this
-    const bgName = headerBgList[nextBgPosition]
-    const newBgImg = require(`../../../../../../assets/img/${bgName}`)
-    headerBackground.current.style.background = `url(${newBgImg}) no-repeat`
+    const { bgImages } = this.state
+    headerBackground.current.style.background = `url(${bgImages[nextBgPosition]}) no-repeat`
     headerBackground.current.style.backgroundSize = 'cover';
     headerBackground.current.style.backgroundPosition = 'center center';
   }
