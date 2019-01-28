@@ -37,13 +37,11 @@ class PoetPage extends React.Component {
   render() {
     const { currentContent } = this.state
     const { lang, choosedPoetId } = this.props
-    console.log(currentContent)
-    if (!choosedPoetId) {
+    if (!choosedPoetId && choosedPoetId !== 0) {
       return null
     }
 
     const choosedPoetContent = currentContent[choosedPoetId]
-
 
     return (
       <div className="poet-page">
@@ -68,8 +66,8 @@ class PoetPage extends React.Component {
           imgName={choosedPoetContent.avatarName}
           gallery={choosedPoetContent.gallery}
         />
-        <PoetVideo lang={lang} link={choosedPoetContent.biographyContent[0].video} />
-        <PoetMap lang={lang} />
+        <PoetVideo lang={lang} link={choosedPoetContent.biographyContent[0].video}/>
+        <PoetMap lang={lang} location={choosedPoetContent.geolocation}/>
       </div>
     )
   }

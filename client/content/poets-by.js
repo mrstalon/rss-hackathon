@@ -3,6 +3,10 @@ export default [
     id: 0,
     name: 'Пятрусь Усцінавіч Броўка',
     avatarName: 'poets_PyotrUstinovichBrovka.jpg',
+    geolocation: {
+      coordinate: [54.937914, 28.383295],
+      text: 'Тут нарадзіўся Пётр Усцінавіч Броўка'
+    },
     biographyContent: [
       {
         born: {
@@ -58,6 +62,10 @@ export default [
     id: 1,
     name: 'Анатоль Вольны',
     avatarName: 'poets_AnatolVolny.jpg',
+    geolocation: {
+      coordinate: [53.511751, 28.147757],
+      text: 'Тут нарадзіўся Анатоль Усціновіч Вольны'
+    },
     biographyContent: [
       {
         born: {
@@ -109,6 +117,10 @@ export default [
     id: 2,
     name: 'Алесь Гарун',
     avatarName: 'poets_AlesHarun.jpg',
+    geolocation: {
+      coordinate: [53.902496, 27.561481],
+      text: 'Тут нарадзіўся Алесь Гарун'
+    },
     biographyContent: [
       {
         born: {
@@ -168,6 +180,10 @@ export default [
     id: 3,
     name: 'Адам Глобус',
     avatarName: 'poets_AdamHlobus.jpg',
+    geolocation: {
+      coordinate: [53.685209, 27.131493],
+      text: 'Тут нарадзіўся Адам Глобус'
+    },
     biographyContent: [
       {
         born: {
@@ -223,6 +239,10 @@ export default [
     id: 4,
     name: 'Ніл Сымонавіч Гілевіч',
     avatarName: 'poets_NilHilevich.jpg',
+    geolocation: {
+      coordinate: [54.006575, 27.877822],
+      text: 'Тут нарадзіўся Ніл Сямёнавіч Гілевіч'
+    },
     biographyContent: [
       {
         born: {
@@ -283,6 +303,10 @@ export default [
     id: 5,
     name: 'Ларыса Антонаўна Геніюш',
     avatarName: 'poets_LarysaHienijus.jpg',
+    geolocation: {
+      coordinate: [53.162947, 24.463991],
+      text: 'Тут нарадзілася Ларыса Антонаўна Геніюш'
+    },
     biographyContent: [
       {
         born: {
